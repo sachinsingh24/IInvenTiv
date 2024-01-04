@@ -14,6 +14,7 @@ import "react-multi-carousel/lib/styles.css";
 import { home_carousel } from "./data";
 // import home_banner from '../../Assets/home banner_image.svg';
 import { Link } from "react-router-dom";
+import { members } from "../../membersData/members";
 
 const Home = () => {
   const [value, setValue] = useState({
@@ -227,12 +228,13 @@ const Home = () => {
         <div className="row justify-content-center">
           <div className="col-md-6 d-flex justify-content-center my-3">
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Chairman</h5>
+              <Card.Img style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} variant="top" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Dr. B.V.R. Mohan Reddy</Card.Title>
                 <Card.Text style={{ color: "#000" }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Founding Chairman, Cyient Ltd.
+                  Chairman, BoG IIT Hyderabad & IIT Roorkee
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -240,12 +242,12 @@ const Home = () => {
           </div>
           <div className="col-md-6 d-flex justify-content-center my-3">
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Convenor</h5>
+              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Prof. B.S. Murty</Card.Title>
                 <Card.Text style={{ color: "#000" }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Director, IIT Hyd
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -255,17 +257,17 @@ const Home = () => {
         </div>
         <div className="coordinators">
         <h5 className="text-center my-4" style={{ color: "#fff" }}>
-        PERMANENT INVITEES/COORDINATORS
+          PERMANENT INVITEES/COORDINATORS
         </h5>
         <div className="row justify-content-center">
           <div className="col-md-4 d-flex justify-content-center my-3">
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Coordinator</h5>
+              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Prof. Chandra Shekhar Sharma Dean (SRC)</Card.Title>
                 <Card.Text style={{ color: "#000" }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  IIT Hyderabad
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -273,12 +275,12 @@ const Home = () => {
           </div>
           <div className="col-md-4 d-flex justify-content-center my-3">
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Special Invitee</h5>
+              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
                 <Card.Text style={{ color: "#000" }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  IIT Bombay
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -286,12 +288,12 @@ const Home = () => {
           </div>
           <div className="col-md-4 d-flex justify-content-center my-3">
             <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Coordinator</h5>
+              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
                 <Card.Text style={{ color: "#000" }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  IIT Hyderabad
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -304,9 +306,27 @@ const Home = () => {
         OTHER MEMBER
         </h5>
         <div className="row justify-content-center">
-          <div className="col-md-2 d-flex justify-content-center my-3">
+        {
+          members.map((member: any) => (
+            <div className="col-md-2 d-flex justify-content-center my-3" key={member.id}>
+              <Card style={{ width: "10rem" }}>
+                <h5 style={{ marginTop: '10px', textAlign: 'center' }}>{member.title}</h5>
+                <Card.Img variant="top" style={{ height: '145px' }} src={require("../../Assets1/person-dummy.jpg")} />
+                <Card.Body>
+                  <Card.Title>{member.name}</Card.Title>
+                  <Card.Text style={{ color: "#000" }}>
+                    {member.affordable}
+                  </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))
+        }
+
+          {/* <div className="col-md-2 d-flex justify-content-center my-3">
             <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text style={{ color: "#000" }}>
@@ -315,115 +335,8 @@ const Home = () => {
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3" >
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3" >
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-2 d-flex justify-content-center my-3">
-            <Card style={{ width: "10rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Some quick example 
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
+          </div> */}
+          
         </div>
         </div>
       </div>
