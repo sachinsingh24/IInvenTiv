@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+body {
+  margin: 0;
+  font-family:'Poppins',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #232741; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html{
+--white-gray:#f8f9fa;
+--bs-blue: #232741;
+}
+p{
+  color: var(--white-gray);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00a0e3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f29b3e;
+
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #29b974;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.Coming-soon{
+position: relative;
+text-align: center;
+align-items: center;
+height: 100vh;
+}
+.Coming-soon-content{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+}

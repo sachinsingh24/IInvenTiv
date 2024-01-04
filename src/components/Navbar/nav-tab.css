@@ -1,0 +1,28 @@
+/** @format */
+
+.navbar {
+  /* position: absolute; */
+  width: 100%;
+  /* z-index: 1; */
+  font-weight: 500;
+  background-color: #fff;
+}
+.navbar-brand img {
+  width: 150px;
+}
+.nav-link{
+  color:#4a6f8a;
+  font-size: 18px;
+}
+
+@media (max-width: 575.5px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+  color:#007bff
+}
