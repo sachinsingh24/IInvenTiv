@@ -1,19 +1,19 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
-import Odometer from "react-odometerjs";
+// import Odometer from "react-odometerjs";
 import "odometer/themes/odometer-theme-default.css";
 import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Carousel1 from "react-multi-carousel";
+// import Carousel1 from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { home_carousel } from "./data";
+// import { home_carousel } from "./data";
 // import home_banner from '../../Assets/home banner_image.svg';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { members } from "../../membersData/members";
 
 const Home = () => {
@@ -43,29 +43,9 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
   return (
     <section>
-      <div className="banner-sec fluid-container ">
+      <div className="banner-sec fluid-container " >
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
             <img
@@ -122,6 +102,7 @@ const Home = () => {
           </div>
         </div> */}
       </div>
+      <div className="anchor"  id="about"></div>
       <div className="About container">
         <h1 className=" mt-5 head-title">
           About{" "}
@@ -136,7 +117,8 @@ const Home = () => {
           country are coming together to showcase the R&D happening there
         </p>
       </div>
-      <div className="funfacts-inner container">
+      <div className="anchor"  id="date"></div>
+      <div className="funfacts-inner container" >
         <h1 className=" mt-5 head-title">Dates & Venue</h1>
 
         <div className="row">
@@ -171,7 +153,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="Participating container ">
+      <div className="anchor"  id="Participating"></div>
+      <div className="Participating container" >
         <h1 className=" mt-5 head-title">Participating Institutes</h1>
         <Tabs
           defaultActiveKey="IITs"
@@ -244,7 +227,8 @@ const Home = () => {
           </Tab>
         </Tabs>
       </div>
-      <div className="Committee container">
+      <div className="anchor"  id="committee"></div>
+      <div className="Committee container" >
         <h1 className="mt-5 head-title">Steering Committee</h1>
         <div className="chairman">
           <h5 className="text-center my-4" style={{ color: "#fff" }}>
@@ -252,19 +236,15 @@ const Home = () => {
           </h5>
           <div className="row justify-content-center">
             <div className="col-md-6 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem" }} className="card_all_members">
+              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
                 <h5
                   className="card_heading"
                   style={{ padding: "10px 0px", textAlign: "center" }}
                 >
                   Chairman
                 </h5>
-                <Card.Img
-                  style={{ height: "145px" }}
-                  src={require("../../Assets1/person-dummy.jpg")}
-                  variant="top"
-                />
-                <Card.Body>
+               
+                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
                   <Card.Title>Dr. B.V.R. Mohan Reddy</Card.Title>
                   <Card.Text style={{ color: "#000" }}>
                     Founding Chairman, Cyient Ltd. Chairman, BoG IIT Hyderabad &
@@ -275,19 +255,15 @@ const Home = () => {
               </Card>
             </div>
             <div className="col-md-6 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem" }} className="card_all_members">
+              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
                 <h5
                   className="card_heading"
                   style={{ padding: "10px 0px", textAlign: "center" }}
                 >
                   Convenor
                 </h5>
-                <Card.Img
-                  variant="top"
-                  style={{ height: "145px" }}
-                  src={require("../../Assets1/person-dummy.jpg")}
-                />
-                <Card.Body>
+                
+                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
                   <Card.Title>Prof. B.S. Murty</Card.Title>
                   <Card.Text style={{ color: "#000" }}>
                     Director, IIT Hyd
@@ -304,19 +280,15 @@ const Home = () => {
           </h5>
           <div className="row justify-content-center">
             <div className="col-md-4 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem" }} className="card_all_members">
+              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
                 <h5
                   className="card_heading"
                   style={{ padding: "10px 0px", textAlign: "center" }}
                 >
                   Coordinator
                 </h5>
-                <Card.Img
-                  variant="top"
-                  style={{ height: "145px" }}
-                  src={require("../../Assets1/person-dummy.jpg")}
-                />
-                <Card.Body>
+                
+                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
                   <Card.Title>
                     Prof. Chandra Shekhar Sharma Dean (SRC)
                   </Card.Title>
@@ -326,19 +298,15 @@ const Home = () => {
               </Card>
             </div>
             <div className="col-md-4 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem" }} className="card_all_members">
+              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
                 <h5
                   className="card_heading"
                   style={{ padding: "10px 0px", textAlign: "center" }}
                 >
                   Special Invitee
                 </h5>
-                <Card.Img
-                  variant="top"
-                  style={{ height: "145px" }}
-                  src={require("../../Assets1/person-dummy.jpg")}
-                />
-                <Card.Body>
+               
+                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
                   <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
                   <Card.Text style={{ color: "#000" }}>IIT Bombay</Card.Text>
                   {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
@@ -346,19 +314,15 @@ const Home = () => {
               </Card>
             </div>
             <div className="col-md-4 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem" }} className="card_all_members">
+              <Card style={{ width: "18rem",backgroundColor:"transparent"  }} className="card_all_members">
                 <h5
                   className="card_heading"
                   style={{ padding: "10px 0px", textAlign: "center" }}
                 >
                   Coordinator
                 </h5>
-                <Card.Img
-                  variant="top"
-                  style={{ height: "145px" }}
-                  src={require("../../Assets1/person-dummy.jpg")}
-                />
-                <Card.Body>
+                
+                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
                   <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
                   <Card.Text style={{ color: "#000" }}>IIT Hyderabad</Card.Text>
                   {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
@@ -374,22 +338,18 @@ const Home = () => {
           <div className="row justify-content-center">
             {members.map((member: any) => (
               <div
-                className="col-md-2 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3"
+                className="col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3"
                 key={member.id}
               >
-                <Card style={{ width: "15rem" }} className="card_all_members">
+                <Card style={{ width: "15rem", backgroundColor:"transparent" }} className="card_all_members">
                   <h5
                     className="card_heading"
                     style={{ padding: "10px 0px", textAlign: "center" }}
                   >
                     {member.title}
                   </h5>
-                  <Card.Img
-                    variant="top"
-                    style={{ height: "145px" }}
-                    src={require("../../Assets1/person-dummy.jpg")}
-                  />
-                  <Card.Body>
+                  
+                  <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
                     <Card.Title>{member.name}</Card.Title>
                     <Card.Text style={{ color: "#000" }}>
                       {member.affiliations}
@@ -415,7 +375,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="IInvenTiv container">
+      <div className="anchor"  id="IInvenTiv"></div>
+      <div className="IInvenTiv container" >
         <h1 className="mt-5 head-title">
           {" "}
           <span style={{ color: "#fff" }}>
@@ -500,66 +461,7 @@ const Home = () => {
           present among the other invitees.
         </p>
       </div>
-      {/* <div className="fluid-container carousel">
-        <h4 className="text-center mt-3 head-title">Our Completed Projects</h4>
-        <Carousel
-          responsive={responsive}
-          swipeable={true}
-          draggable={true}
-          // slidesToSlide={3}
-          showDots={true}
-          ssr={true}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={5000}
-          rewind={true}
-          renderDotsOutside={true}
-          keyBoardControl={false}
-          centerMode={false}
-          // itemClass='carousel-item-padding-10-px'
-          removeArrowOnDeviceType={['tablet', 'mobile']}
-          dotListClass='custom-dot-list-style'>
-          {home_carousel.map((item, index) => (
-            <div className='card' key={index}>
-              <div className='img-card'>
-                <img src={item.images} alt='' />
-              </div>
-              <div className='testimonial'>
-                <h5>
-                  LOCATION: <span>{item.testimonial}</span>
-                </h5>
-              </div>
-              <div className='name'>{item.name}</div>
-            </div>
-          ))}
-        </Carousel>
-      </div> */}
-      {/* <div className="container-fluid p-0 mt-3">
-        <div className="home-about-sec">
-          <div className="home-about-img">
-            <img
-              src={require("../../Assets/About-us.jpg")}
-              alt="About-us"
-              className="img-fluid"
-            />
-            <div className="home-about-tag">
-              <div className="home-about-wrap">
-                <p className="Shiv_tag">
-                  Great Things Never Come <br /> From Comfort Zones
-                </p>
-                <img
-                  src={require("../../Assets/JPU-Logo.png")}
-                  className="img-fluid"
-                  alt=""
-                />
-                <Link to="/About">
-                  <button className="tag-button shiv-btn">About Us</button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
     </section>
   );
 };

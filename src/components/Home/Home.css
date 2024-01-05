@@ -1,7 +1,7 @@
 /** @format */
 
 .banner-sec img {
-  /* height: calc(100vh - 64px); */
+  
   object-fit: cover;
   /* position: relative; */
   width: 100%;
@@ -318,7 +318,12 @@ button {
   margin: 0 auto;
 }
 
+
 @media (max-width: 575.5px) {
+  .banner-sec {
+    height: auto;
+    margin-top: 80px;
+  }
   .tabs_iit_para{
     height: 240px !important;
   }
@@ -400,6 +405,9 @@ button {
 }
 /* end owl carousel */
 
+.desktop-view{
+  height: calc(100vh);
+}
 .About p {
   font-size: 20px;
 }
@@ -430,18 +438,21 @@ button {
 }
 
 .card_heading{
-  background-color: #3d52bf;
+
   color: #f9a33f;
   font-weight: bold;
-  border: 1px solid #1436e2;
   /* border-radius: 15px 0px; */
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card_all_members{
-  box-shadow: 10px 10px 10px 0 #8795f1;
-  border-radius: 15px;
+  box-shadow: 5px 5px 20px #575757;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 @media screen and (max-width: 992px) {
