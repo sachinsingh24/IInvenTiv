@@ -161,7 +161,7 @@ const Home = () => {
                     {/* <Odometer format="(,ddd).dd" value={value.second} /> */}
                     <span className="odo-text">VENUS</span>
                   </h3>
-                  <p>
+                  <p className="venue_para">
                     Convention Center, IIT Hyderabad Campus Kandi, Sangareddy,
                     Telangana – 502285
                   </p>
@@ -179,14 +179,14 @@ const Home = () => {
           id="noanim-tab-example"
           className="mb-3"
         >
-          <Tab eventKey="IITs" title="23 IITs" style={{height:"180px"}}>
+          <Tab eventKey="IITs" title="23 IITs" style={{height:"180px"}} className="tabs_iit_para">
             IIT Bhilai, IIT BHU, IIT Bhubaneswar, IIT Bombay, IIT Delhi, IIT
             Dharwad, IIT Gandhinagar, IIT Goa, IIT Guwahati, IIT Hyderabad, IIT
             Indore, IIT ISM Dhanbad, IIT Jammu, IIT Jodhpur, IIT Kanpur, IIT
             Kharagpur, IIT Madras, IIT Mandi, IIT Palakkad, IIT Patna, IIT
             Roorkee, IIT Ropar, IIT Tirupati
           </Tab>
-          <Tab eventKey="NITs" title="31 NITs " style={{height:"180px"}}>
+          <Tab eventKey="NITs" title="31 NITs " style={{height:"180px"}} className="tabs_iit_para">
             NIT Agartala, NIT Allahabad, NIT Andhra Pradesh, NIT Arunachal
             Pradesh, NIT Bhopal, NIT Calicut, NIT Delhi, NIT Durgapur, NIT Goa,
             NIT Hamirpur, NIT Jaipur, NIT Jalandhar, NIT Jamshedpur, NIT
@@ -195,15 +195,15 @@ const Home = () => {
             NIT Raipur, NIT Rourkela, NIT Sikkim, NIT Silchar, NIT Srinagar, NIT
             Surat, NIT Tiruchirappalli, NIT Uttarakhand, NIT Warangal
           </Tab>
-          <Tab eventKey="IISERs" title="7 IISERs " style={{height:"180px"}}>
+          <Tab eventKey="IISERs" title="7 IISERs " style={{height:"180px"}} className="tabs_iit_para">
             IISER Berhampur, IISER Bhopal, IISER Kolkata, IISER Mohali, IISER
             Pune, IISER Thiruvananthapuram, IISER Tirupati
           </Tab>
-          <Tab eventKey="IIITs" title="5 IIITs" style={{height:"180px"}}>
+          <Tab eventKey="IIITs" title="5 IIITs" style={{height:"180px"}} className="tabs_iit_para">
             IIIT Allahabad , IIIT Hyderabad, IIITDM Kurnool,IIITDM,
             Kancheepuram, IIITDM Jabalpur
           </Tab>
-          <Tab eventKey="Other" title="Other Top 50 NIRF Engg Institutes " style={{height:"180px"}}>
+          <Tab eventKey="Other" title="Other Top 50 NIRF Engg Institutes " style={{height:"180px"}} className="tabs_iit_para">
             Aligarh Muslim University, Amity University, Amrita Vishwa
             Vidyapeetham, Anna University, Birla Institute of Technology &
             Science - Pilani, Chandigarh University, Delhi Technological
@@ -227,8 +227,8 @@ const Home = () => {
         </h5>
         <div className="row justify-content-center">
           <div className="col-md-6 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }}>
-              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Chairman</h5>
+            <Card style={{ width: "18rem" }} className="card_all_members">
+              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Chairman</h5>
               <Card.Img style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} variant="top" />
               <Card.Body>
                 <Card.Title>Dr. B.V.R. Mohan Reddy</Card.Title>
@@ -236,20 +236,20 @@ const Home = () => {
                   Founding Chairman, Cyient Ltd.
                   Chairman, BoG IIT Hyderabad & IIT Roorkee
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-6 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }}>
-              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Convenor</h5>
+            <Card style={{ width: "18rem" }} className="card_all_members">
+              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Convenor</h5>
               <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
                 <Card.Title>Prof. B.S. Murty</Card.Title>
                 <Card.Text style={{ color: "#000" }}>
                   Director, IIT Hyd
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
               </Card.Body>
             </Card>
           </div>
@@ -261,41 +261,41 @@ const Home = () => {
         </h5>
         <div className="row justify-content-center">
           <div className="col-md-4 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }}>
-              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Coordinator</h5>
+            <Card style={{ width: "18rem" }} className="card_all_members">
+              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Coordinator</h5>
               <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
                 <Card.Title>Prof. Chandra Shekhar Sharma Dean (SRC)</Card.Title>
                 <Card.Text style={{ color: "#000" }}>
                   IIT Hyderabad
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-4 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }}>
-              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Special Invitee</h5>
+            <Card style={{ width: "18rem" }} className="card_all_members">
+              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Special Invitee</h5>
               <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
                 <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
                 <Card.Text style={{ color: "#000" }}>
                   IIT Bombay
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
               </Card.Body>
             </Card>
           </div>
           <div className="col-md-4 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }}>
-              <h5 style={{marginTop: '10px', textAlign: 'center'}}>Coordinator</h5>
+            <Card style={{ width: "18rem" }} className="card_all_members">
+              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Coordinator</h5>
               <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
                 <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
                 <Card.Text style={{ color: "#000" }}>
                   IIT Hyderabad
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
               </Card.Body>
             </Card>
           </div>
@@ -308,16 +308,16 @@ const Home = () => {
         <div className="row justify-content-center">
         {
           members.map((member: any) => (
-            <div className="col-md-2 d-flex justify-content-center my-3" key={member.id}>
-              <Card style={{ width: "10rem" }}>
-                <h5 style={{ marginTop: '10px', textAlign: 'center' }}>{member.title}</h5>
+            <div className="col-md-2 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3" key={member.id}>
+              <Card style={{ width: "15rem" }} className="card_all_members">
+                <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center' }}>{member.title}</h5>
                 <Card.Img variant="top" style={{ height: '145px' }} src={require("../../Assets1/person-dummy.jpg")} />
                 <Card.Body>
                   <Card.Title>{member.name}</Card.Title>
                   <Card.Text style={{ color: "#000" }}>
-                    {member.affordable}
+                    {member.affiliations}
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
                 </Card.Body>
               </Card>
             </div>
@@ -332,7 +332,7 @@ const Home = () => {
                 <Card.Text style={{ color: "#000" }}>
                   Some quick example 
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                // <Button variant="primary" className="card_button">Go somewhere</Button>
               </Card.Body>
             </Card>
           </div> */}

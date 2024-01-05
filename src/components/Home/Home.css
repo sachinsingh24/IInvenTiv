@@ -1,7 +1,7 @@
 /** @format */
 
 .banner-sec img {
-  height: calc(100vh - 64px);
+  /* height: calc(100vh - 64px); */
   object-fit: cover;
   /* position: relative; */
   width: 100%;
@@ -319,6 +319,12 @@ button {
 }
 
 @media (max-width: 575.5px) {
+  .tabs_iit_para{
+    height: 240px !important;
+  }
+  section .IInvenTiv p {
+    font-size: 15px;
+  }
   .funfacts-style-P P {
     font-size: 13px;
   }
@@ -417,4 +423,41 @@ button {
 .IInvenTiv ul, li{
   font-size: 18px;
   color: #fff;
+}
+
+.card_button{
+  background-image: linear-gradient(90deg,#52a0fd 0,#00e2fa 51%,#52a0fd);
+}
+
+.card_heading{
+  background-color: #3d52bf;
+  color: #f9a33f;
+  font-weight: bold;
+  border: 1px solid #1436e2;
+  /* border-radius: 15px 0px; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card_all_members{
+  box-shadow: 10px 10px 10px 0 #8795f1;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .tabs_iit_para {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .venue_para, .tabs_iit_para {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabs_iit_para {
+    font-size: 12px !important;
+  }
 }
