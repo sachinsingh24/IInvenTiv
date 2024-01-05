@@ -74,10 +74,10 @@ const Home = () => {
               className="desktop-view"
             />
             <img
-          src={require('../../Assets1/banner/mob1.jpg')}
-          alt=''
-          className='mobile-view d-none'
-        />
+              src={require("../../Assets1/banner/mob1.jpg")}
+              alt=""
+              className="mobile-view d-none"
+            />
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -86,10 +86,10 @@ const Home = () => {
               className="desktop-view"
             />
             <img
-          src={require('../../Assets1/banner/mob2.jpg')}
-          alt=''
-          className='mobile-view d-none'
-        />
+              src={require("../../Assets1/banner/mob2.jpg")}
+              alt=""
+              className="mobile-view d-none"
+            />
           </Carousel.Item>
           <Carousel.Item>
             <img
@@ -98,10 +98,10 @@ const Home = () => {
               className="desktop-view"
             />
             <img
-          src={require('../../Assets1/banner/3.jpg')}
-          alt=''
-          className='mobile-view d-none'
-        />
+              src={require("../../Assets1/banner/mob3.jpg")}
+              alt=""
+              className="mobile-view d-none"
+            />
           </Carousel.Item>
         </Carousel>
       </div>
@@ -179,14 +179,24 @@ const Home = () => {
           id="noanim-tab-example"
           className="mb-3"
         >
-          <Tab eventKey="IITs" title="23 IITs" style={{height:"180px"}} className="tabs_iit_para">
+          <Tab
+            eventKey="IITs"
+            title="23 IITs"
+            style={{ height: "180px" }}
+            className="tabs_iit_para"
+          >
             IIT Bhilai, IIT BHU, IIT Bhubaneswar, IIT Bombay, IIT Delhi, IIT
             Dharwad, IIT Gandhinagar, IIT Goa, IIT Guwahati, IIT Hyderabad, IIT
             Indore, IIT ISM Dhanbad, IIT Jammu, IIT Jodhpur, IIT Kanpur, IIT
             Kharagpur, IIT Madras, IIT Mandi, IIT Palakkad, IIT Patna, IIT
             Roorkee, IIT Ropar, IIT Tirupati
           </Tab>
-          <Tab eventKey="NITs" title="31 NITs " style={{height:"180px"}} className="tabs_iit_para">
+          <Tab
+            eventKey="NITs"
+            title="31 NITs "
+            style={{ height: "180px" }}
+            className="tabs_iit_para"
+          >
             NIT Agartala, NIT Allahabad, NIT Andhra Pradesh, NIT Arunachal
             Pradesh, NIT Bhopal, NIT Calicut, NIT Delhi, NIT Durgapur, NIT Goa,
             NIT Hamirpur, NIT Jaipur, NIT Jalandhar, NIT Jamshedpur, NIT
@@ -195,15 +205,30 @@ const Home = () => {
             NIT Raipur, NIT Rourkela, NIT Sikkim, NIT Silchar, NIT Srinagar, NIT
             Surat, NIT Tiruchirappalli, NIT Uttarakhand, NIT Warangal
           </Tab>
-          <Tab eventKey="IISERs" title="7 IISERs " style={{height:"180px"}} className="tabs_iit_para">
+          <Tab
+            eventKey="IISERs"
+            title="7 IISERs "
+            style={{ height: "180px" }}
+            className="tabs_iit_para"
+          >
             IISER Berhampur, IISER Bhopal, IISER Kolkata, IISER Mohali, IISER
             Pune, IISER Thiruvananthapuram, IISER Tirupati
           </Tab>
-          <Tab eventKey="IIITs" title="5 IIITs" style={{height:"180px"}} className="tabs_iit_para">
+          <Tab
+            eventKey="IIITs"
+            title="5 IIITs"
+            style={{ height: "180px" }}
+            className="tabs_iit_para"
+          >
             IIIT Allahabad , IIIT Hyderabad, IIITDM Kurnool,IIITDM,
             Kancheepuram, IIITDM Jabalpur
           </Tab>
-          <Tab eventKey="Other" title="Other Top 50 NIRF Engg Institutes " style={{height:"180px"}} className="tabs_iit_para">
+          <Tab
+            eventKey="Other"
+            title="Other Top 50 NIRF Engg Institutes "
+            style={{ height: "180px" }}
+            className="tabs_iit_para"
+          >
             Aligarh Muslim University, Amity University, Amrita Vishwa
             Vidyapeetham, Anna University, Birla Institute of Technology &
             Science - Pilani, Chandigarh University, Delhi Technological
@@ -222,109 +247,160 @@ const Home = () => {
       <div className="Committee container">
         <h1 className="mt-5 head-title">Steering Committee</h1>
         <div className="chairman">
-        <h5 className="text-center my-4" style={{ color: "#fff" }}>
-          CHAIRMAN & CONVENOR
-        </h5>
-        <div className="row justify-content-center">
-          <div className="col-md-6 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }} className="card_all_members">
-              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Chairman</h5>
-              <Card.Img style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} variant="top" />
-              <Card.Body>
-                <Card.Title>Dr. B.V.R. Mohan Reddy</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Founding Chairman, Cyient Ltd.
-                  Chairman, BoG IIT Hyderabad & IIT Roorkee
-                </Card.Text>
-                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-6 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }} className="card_all_members">
-              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Convenor</h5>
-              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
-              <Card.Body>
-                <Card.Title>Prof. B.S. Murty</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  Director, IIT Hyd
-                </Card.Text>
-                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-              </Card.Body>
-            </Card>
-          </div>
-        </div>
-        </div>
-        <div className="coordinators">
-        <h5 className="text-center my-4" style={{ color: "#fff" }}>
-          PERMANENT INVITEES/COORDINATORS
-        </h5>
-        <div className="row justify-content-center">
-          <div className="col-md-4 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }} className="card_all_members">
-              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Coordinator</h5>
-              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
-              <Card.Body>
-                <Card.Title>Prof. Chandra Shekhar Sharma Dean (SRC)</Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  IIT Hyderabad
-                </Card.Text>
-                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-4 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }} className="card_all_members">
-              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Special Invitee</h5>
-              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
-              <Card.Body>
-                <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  IIT Bombay
-                </Card.Text>
-                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-              </Card.Body>
-            </Card>
-          </div>
-          <div className="col-md-4 d-flex justify-content-center my-3">
-            <Card style={{ width: "18rem" }} className="card_all_members">
-              <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center'}}>Coordinator</h5>
-              <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
-              <Card.Body>
-                <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
-                <Card.Text style={{ color: "#000" }}>
-                  IIT Hyderabad
-                </Card.Text>
-                {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-              </Card.Body>
-            </Card>
-          </div>
-        </div>
-        </div>
-        <div className="members">
-        <h5 className="text-center my-4" style={{ color: "#fff" }}>
-        OTHER MEMBER
-        </h5>
-        <div className="row justify-content-center">
-        {
-          members.map((member: any) => (
-            <div className="col-md-2 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3" key={member.id}>
-              <Card style={{ width: "15rem" }} className="card_all_members">
-                <h5 className="card_heading" style={{ padding: '10px 0px', textAlign: 'center' }}>{member.title}</h5>
-                <Card.Img variant="top" style={{ height: '145px' }} src={require("../../Assets1/person-dummy.jpg")} />
+          <h5 className="text-center my-4" style={{ color: "#fff" }}>
+            CHAIRMAN & CONVENOR
+          </h5>
+          <div className="row justify-content-center">
+            <div className="col-md-6 d-flex justify-content-center my-3">
+              <Card style={{ width: "18rem" }} className="card_all_members">
+                <h5
+                  className="card_heading"
+                  style={{ padding: "10px 0px", textAlign: "center" }}
+                >
+                  Chairman
+                </h5>
+                <Card.Img
+                  style={{ height: "145px" }}
+                  src={require("../../Assets1/person-dummy.jpg")}
+                  variant="top"
+                />
                 <Card.Body>
-                  <Card.Title>{member.name}</Card.Title>
+                  <Card.Title>Dr. B.V.R. Mohan Reddy</Card.Title>
                   <Card.Text style={{ color: "#000" }}>
-                    {member.affiliations}
+                    Founding Chairman, Cyient Ltd. Chairman, BoG IIT Hyderabad &
+                    IIT Roorkee
                   </Card.Text>
                   {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
                 </Card.Body>
               </Card>
             </div>
-          ))
-        }
+            <div className="col-md-6 d-flex justify-content-center my-3">
+              <Card style={{ width: "18rem" }} className="card_all_members">
+                <h5
+                  className="card_heading"
+                  style={{ padding: "10px 0px", textAlign: "center" }}
+                >
+                  Convenor
+                </h5>
+                <Card.Img
+                  variant="top"
+                  style={{ height: "145px" }}
+                  src={require("../../Assets1/person-dummy.jpg")}
+                />
+                <Card.Body>
+                  <Card.Title>Prof. B.S. Murty</Card.Title>
+                  <Card.Text style={{ color: "#000" }}>
+                    Director, IIT Hyd
+                  </Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+        </div>
+        <div className="coordinators">
+          <h5 className="text-center my-4" style={{ color: "#fff" }}>
+            PERMANENT INVITEES/COORDINATORS
+          </h5>
+          <div className="row justify-content-center">
+            <div className="col-md-4 d-flex justify-content-center my-3">
+              <Card style={{ width: "18rem" }} className="card_all_members">
+                <h5
+                  className="card_heading"
+                  style={{ padding: "10px 0px", textAlign: "center" }}
+                >
+                  Coordinator
+                </h5>
+                <Card.Img
+                  variant="top"
+                  style={{ height: "145px" }}
+                  src={require("../../Assets1/person-dummy.jpg")}
+                />
+                <Card.Body>
+                  <Card.Title>
+                    Prof. Chandra Shekhar Sharma Dean (SRC)
+                  </Card.Title>
+                  <Card.Text style={{ color: "#000" }}>IIT Hyderabad</Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col-md-4 d-flex justify-content-center my-3">
+              <Card style={{ width: "18rem" }} className="card_all_members">
+                <h5
+                  className="card_heading"
+                  style={{ padding: "10px 0px", textAlign: "center" }}
+                >
+                  Special Invitee
+                </h5>
+                <Card.Img
+                  variant="top"
+                  style={{ height: "145px" }}
+                  src={require("../../Assets1/person-dummy.jpg")}
+                />
+                <Card.Body>
+                  <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
+                  <Card.Text style={{ color: "#000" }}>IIT Bombay</Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col-md-4 d-flex justify-content-center my-3">
+              <Card style={{ width: "18rem" }} className="card_all_members">
+                <h5
+                  className="card_heading"
+                  style={{ padding: "10px 0px", textAlign: "center" }}
+                >
+                  Coordinator
+                </h5>
+                <Card.Img
+                  variant="top"
+                  style={{ height: "145px" }}
+                  src={require("../../Assets1/person-dummy.jpg")}
+                />
+                <Card.Body>
+                  <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
+                  <Card.Text style={{ color: "#000" }}>IIT Hyderabad</Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+        </div>
+        <div className="members">
+          <h5 className="text-center my-4" style={{ color: "#fff" }}>
+            OTHER MEMBER
+          </h5>
+          <div className="row justify-content-center">
+            {members.map((member: any) => (
+              <div
+                className="col-md-2 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-3"
+                key={member.id}
+              >
+                <Card style={{ width: "15rem" }} className="card_all_members">
+                  <h5
+                    className="card_heading"
+                    style={{ padding: "10px 0px", textAlign: "center" }}
+                  >
+                    {member.title}
+                  </h5>
+                  <Card.Img
+                    variant="top"
+                    style={{ height: "145px" }}
+                    src={require("../../Assets1/person-dummy.jpg")}
+                  />
+                  <Card.Body>
+                    <Card.Title>{member.name}</Card.Title>
+                    <Card.Text style={{ color: "#000" }}>
+                      {member.affiliations}
+                    </Card.Text>
+                    {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                  </Card.Body>
+                </Card>
+              </div>
+            ))}
 
-          {/* <div className="col-md-2 d-flex justify-content-center my-3">
+            {/* <div className="col-md-2 d-flex justify-content-center my-3">
             <Card style={{ width: "10rem" }}>
               <Card.Img variant="top" style={{height: '145px'}} src={require("../../Assets1/person-dummy.jpg")} />
               <Card.Body>
@@ -336,15 +412,18 @@ const Home = () => {
               </Card.Body>
             </Card>
           </div> */}
-          
-        </div>
+          </div>
         </div>
       </div>
       <div className="IInvenTiv container">
-        <h1 className="mt-5 head-title"> <span style={{ color: "#fff" }}>
+        <h1 className="mt-5 head-title">
+          {" "}
+          <span style={{ color: "#fff" }}>
             <span style={{ color: "#f9a33f" }}>II</span>nven
             <span style={{ color: "#f9a33f" }}>T</span>iv
-          </span> 2022</h1>
+          </span>{" "}
+          2022
+        </h1>
         <p>
           For the first time, all the 23 IITs of the country have come together
           for a mega Research & Development Fair which was held from October
@@ -371,7 +450,11 @@ const Home = () => {
           of innovations that benefit the masses across regions.
         </p>
         <ul>
-         <h4> There were ten broad themes identified in focused areas for the event:</h4>
+          <h4>
+            {" "}
+            There were ten broad themes identified in focused areas for the
+            event:
+          </h4>
           <li>Defence and aerospace</li>
           <li>Healthcare (including devices and digital health)</li>
           <li>Environment and Sustainability (including air, water, rivers)</li>
