@@ -144,7 +144,7 @@ const Home = () => {
           defaultActiveKey="IITs"
           transition={false}
           id="noanim-tab-example"
-          className="mb-3"
+          className="my-3"
         >
           <Tab
             eventKey="IITs"

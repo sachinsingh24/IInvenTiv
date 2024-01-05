@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Logistics.css'
 const Logistics = () => {
   return (
     <div className='Coming-soon'>

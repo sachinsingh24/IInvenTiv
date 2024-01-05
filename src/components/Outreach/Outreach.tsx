@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Outreach.css'
 const Outreach = () => {
   return (
     <div className="Coming-soon">
