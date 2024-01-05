@@ -10,3 +10,13 @@
 .contact-brand p{
 color: #000000;
 }
+.contact-section{
+    background-color: black;
+    margin-top: 80px;
+    color: #cfcccc;
+    margin-bottom: -16px;
+}
+.contact-details{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

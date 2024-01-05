@@ -29,13 +29,13 @@ const Contact = () => {
     event.target.reset();
   };
   return (
-    <div className='Coming-soon'>
-      <div className='Coming-soon-content'>
-        <h2>contacts us</h2>
-        <h3>This page is under development</h3>
-        <h2>See You Soon</h2>
+    <section className='contact-section'>
+      <div className='contact-details'>
+        <h3>IInvenTiv Secretariat contact info</h3>
+        <p>Email: iinventive@iith.ac.in</p>
+        <p>Contact: 04023016208</p>
       </div>
-    </div>
+    </section>
   );
   // return (
   //   <section className='bg-white'>
