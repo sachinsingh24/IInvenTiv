@@ -6,7 +6,7 @@ export const members = [
         affiliations: 'Director, IIT Bombay'
     },
     {
-        id: 4,
+        id: 4,  
         title: 'Member',
         name: 'Prof. Kamakoti Veezhinathan',
         affiliations: 'Director, IIT Madras'
@@ -114,12 +114,6 @@ export const members = [
         affiliations: 'Vice Chancellor, Thapar Inst.'
     },
     {
-        id: 21,
-        title: 'Member',
-        name: 'Prof. Prakash Gopalan',
-        affiliations: 'Vice Chancellor, Thapar Inst.'
-    },
-    {
         id: 22,
         title: 'Member',
         name: 'Prof. V. Ramgopal Rao',
@@ -132,7 +126,7 @@ export const members = [
         affiliations: 'Vice Chancellor, Shastra Univ'
     },
     {
-        id: 23,
+        id: 24,
         title: 'Member',
         name: 'Prof. Pradipta Kumar Nanda,',
         affiliations: 'Vice Chancellor, Siksha O Anusandhan'

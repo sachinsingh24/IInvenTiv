@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 // import logo from "../../Assets/JPU-Logo.png";
 import { Link } from "react-router-dom";
 import { home,message,Showcase,ProgramGuide,Logistics,Outreach } from "./dropdown_data";
+import { link } from "fs";
 
 interface ShowState {
   drop1: boolean;
@@ -75,7 +76,7 @@ const Nav_tab = () => {
           >
             <Container>
               <Navbar.Brand>
-                <Link to="/">
+                <Link to="/Home">
                   <h2 style={{ color: "#154489" }}>
                     <span style={{ color: "#f9a33f" }}>II</span>nven
                     <span style={{ color: "#f9a33f" }}>T</span>iv
@@ -103,7 +104,7 @@ const Nav_tab = () => {
                     <NavDropdown
                      
                       title={(
-                        <Link to="/">
+                        <Link to="/Home">
                           Home
                         </Link>
                       )}
@@ -113,20 +114,20 @@ const Nav_tab = () => {
                       onMouseEnter={() => handleShowUpdate("drop1")}
                       onMouseLeave={() => handleShowUpdate("drop1")}
                       onClick={() => handleNavClick("1")}
+                      className={activeLink === "1" ? "active" : ""}
                     >
                       {home.map((item, index) => {
                         return (
                           <NavDropdown.Item
                             key={index}
                             href={`${item.link}`}
-                        
-                            active={activeLink === `${index + 2}`}
-                            onClick={()=>navigate("/")}
+                            onClick={()=>navigate("/Home")}
+                           
                           >
                             <div className="nav-dropdown">
                               <div className="general-cloud">
                                 <div className="general-cloud-vps">
-                                  <h5>{item.head}</h5>
+                                  <h6>{item.head}</h6>
                                 </div>
                               </div>
                             </div>
@@ -146,6 +147,7 @@ const Nav_tab = () => {
                       onMouseEnter={() => handleShowUpdate("drop2")}
                       onMouseLeave={() => handleShowUpdate("drop2")}
                       onClick={() => handleNavClick("2")}
+                      className={activeLink === "2" ? "active" : ""}
                     >
                       {message.map((item, index) => {
                         return (
@@ -158,7 +160,7 @@ const Nav_tab = () => {
                             <div className="nav-dropdown">
                               <div className="general-cloud">
                                 <div className="general-cloud-vps">
-                                  <h5>{item.head}</h5>
+                                  <h6>{item.head}</h6>
                                 </div>
                               </div>
                             </div>
@@ -178,6 +180,7 @@ const Nav_tab = () => {
                       onMouseEnter={() => handleShowUpdate("drop3")}
                       onMouseLeave={() => handleShowUpdate("drop3")}
                       onClick={() => handleNavClick("3")}
+                      className={activeLink === "3" ? "active" : ""}
                     >
                       {Showcase.map((item, index) => {
                         return (
@@ -190,7 +193,7 @@ const Nav_tab = () => {
                             <div className="nav-dropdown">
                               <div className="general-cloud">
                                 <div className="general-cloud-vps">
-                                  <h5>{item.head}</h5>
+                                  <h6>{item.head}</h6>
                                 </div>
                               </div>
                             </div>
@@ -209,7 +212,8 @@ const Nav_tab = () => {
                      show={show.drop4}
                      onMouseEnter={() => handleShowUpdate("drop4")}
                      onMouseLeave={() => handleShowUpdate("drop4")}
-                     onClick={() => handleNavClick("3")}
+                     onClick={() => handleNavClick("4")}
+                     className={activeLink === "4" ? "active" : ""}
                    >
                      {ProgramGuide.map((item, index) => {
                        return (
@@ -222,7 +226,7 @@ const Nav_tab = () => {
                            <div className="nav-dropdown">
                              <div className="general-cloud">
                                <div className="general-cloud-vps">
-                                 <h5>{item.head}</h5>
+                                 <h6>{item.head}</h6>
                                </div>
                              </div>
                            </div>
@@ -241,7 +245,8 @@ const Nav_tab = () => {
                      show={show.drop5}
                      onMouseEnter={() => handleShowUpdate("drop5")}
                      onMouseLeave={() => handleShowUpdate("drop5")}
-                     onClick={() => handleNavClick("3")}
+                     onClick={() => handleNavClick("5")}
+                     className={activeLink === "5" ? "active" : ""}
                    >
                      {Logistics.map((item, index) => {
                        return (
@@ -249,12 +254,12 @@ const Nav_tab = () => {
                            key={index}
                            href={`${item.link}`}
                           
-                           onClick={()=>navigate("Program_Guide")}
+                           onClick={()=>navigate("/Logistics")}
                          >
                            <div className="nav-dropdown">
                              <div className="general-cloud">
                                <div className="general-cloud-vps">
-                                 <h5>{item.head}</h5>
+                                 <h6>{item.head}</h6>
                                </div>
                              </div>
                            </div>
@@ -273,7 +278,8 @@ const Nav_tab = () => {
                      show={show.drop6}
                      onMouseEnter={() => handleShowUpdate("drop6")}
                      onMouseLeave={() => handleShowUpdate("drop6")}
-                     onClick={() => handleNavClick("3")}
+                     onClick={() => handleNavClick("6")}
+                     className={activeLink === "6" ? "active" : ""}
                    >
                      {Outreach.map((item, index) => {
                        return (
@@ -281,12 +287,12 @@ const Nav_tab = () => {
                            key={index}
                            href={`${item.link}`}
                           
-                           onClick={()=>navigate("Program_Guide")}
+                           onClick={()=>navigate("/Outreach")}
                          >
                            <div className="nav-dropdown">
                              <div className="general-cloud">
                                <div className="general-cloud-vps">
-                                 <h5>{item.head}</h5>
+                                 <h6>{item.head}</h6>
                                </div>
                              </div>
                            </div>
@@ -294,31 +300,12 @@ const Nav_tab = () => {
                        );
                      })}
                    </NavDropdown>
-                    {/* <NavDropdown
-                    title="R&D Showcase"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/Constructed"
-                      eventKey="3"
-                    >
-                      Constructed
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/ShivParadise"
-                      eventKey="4"
-                    >
-                      Shiv Paradise
-                    </NavDropdown.Item>
-                  </NavDropdown> */}
                     <Nav.Link
-                      as={Link}
+                     as={Link}
                       to="/Contact"
-                      eventKey="7"
-                      active={activeLink === "7"}
+                     
                       onClick={() => handleNavClick("7")}
+                      className={activeLink === "7" ? "active" : ""}
                     >
                       Contact Us
                     </Nav.Link>

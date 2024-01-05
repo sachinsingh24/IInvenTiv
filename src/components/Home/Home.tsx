@@ -45,6 +45,7 @@ const Home = () => {
   }, []);
   return (
     <section>
+      <div className="anchor"  id="home"></div>
       <div className="banner-sec fluid-container " >
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
@@ -84,23 +85,6 @@ const Home = () => {
             />
           </Carousel.Item>
         </Carousel>
-      </div>
-      <div className="banner-tag">
-        {/* <div className='row'>
-          <div className='col-12 col-lg-12 col-sm-12'>
-            <div className='tags animated fadeInLeft'>
-              <img
-                src={require('../../Assets/Shiv Paradise logo.png')}
-                alt=''
-                className='img-fluid'
-              />
-              <h2 className='pt-3 pb-3'>Experience The Paradise life</h2>
-              <Link to='/ShivParadise'>
-                <button className='tag-button'> Explore Now </button>
-              </Link>
-            </div>
-          </div>
-        </div> */}
       </div>
       <div className="anchor"  id="about"></div>
       <div className="About container">

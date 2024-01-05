@@ -40,6 +40,18 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/Home"
+          element={
+            <>
+              <Particles
+                options={particlesOptions as ISourceOptions}
+                init={particlesInit}
+              />{" "}
+              <Home />
+            </>
+          }
+        />
         <Route path="/Messages" element={<Messages />} />
         <Route path="/R&D_Showcase" element={<Showcase />} />
         <Route path="/Program_Guide" element={<ProgramGuide />} />
