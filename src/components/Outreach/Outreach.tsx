@@ -52,24 +52,29 @@ const Outreach = () => {
   return (
     <section className='outreach-section'>
       <div className='anchor' id='Social'></div>
-      <div className='social-media'>
+      <div className='social-media container'>
         <h2>Social media clips etc</h2>
         <Carousel
-          ssr
+          ssr={true}
+          // partialVisbile
+          // deviceType={deviceType}
+          swipeable={true}
+          draggable={true}
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={2500}
           rewind={true}
+          centerMode={false}
+          removeArrowOnDeviceType={['tablet', 'mobile']}
           itemClass='image-item'
-          responsive={responsive}
-        >
+          responsive={responsive}>
           {images.map((item, index) => {
             return (
               <img
                 key={index}
                 src={item}
                 alt={`social images${index + 1}`}
-                style={{ width: '100%', height: '400px' }}
+                style={{ width: '100%', height: '350px' }}
               />
             );
           })}

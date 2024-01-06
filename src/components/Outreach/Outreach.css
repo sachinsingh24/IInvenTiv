@@ -8,12 +8,3 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.react-multi-carousel-track li{
-    width: 350px !important;
-    height: 400px !important;
-}
-/* @media screen and (max-width: 450px) {
-    .react-multi-carousel-track li{
-        padding: 0;
-    }
-} */
