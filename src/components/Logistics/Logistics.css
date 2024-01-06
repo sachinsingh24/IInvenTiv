@@ -14,3 +14,16 @@
     margin-left: 15px;
     padding: 15px;
 }
+
+.card-layout {
+    background-color: #f6f7f9;
+    border-radius: 15px;
+    color: #4f4f4f;
+    padding: 10px;
+    height: 100%;
+}
+
+.card-layout ul li {
+    color: #4f4f4f;
+    font-size: 15px;
+}
