@@ -53,7 +53,7 @@ const Outreach = () => {
     <section className='outreach-section'>
       <div className='anchor' id='Social'></div>
       <div className='social-media container'>
-        <h2>Social media clips etc</h2>
+        <h2>Social media news and clips</h2>
         <Carousel
           ssr={true}
           // partialVisbile
