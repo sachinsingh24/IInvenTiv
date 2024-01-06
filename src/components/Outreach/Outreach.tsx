@@ -8,12 +8,12 @@ const Outreach = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
       paritialVisibilityGutter: 60,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
       paritialVisibilityGutter: 50,
     },
     mobile: {
@@ -42,16 +42,14 @@ const Outreach = () => {
       <div className="social-media container">
         <h2>Social media clips etc</h2>
 
-
-
-
-
-
-
         <Carousel
           ssr
-          partialVisbile
+          // partialVisbile
           // deviceType={deviceType}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2500}
+          rewind={true}
           itemClass="image-item"
           responsive={responsive}
         >
