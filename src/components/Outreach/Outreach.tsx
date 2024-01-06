@@ -54,11 +54,8 @@ const Outreach = () => {
       <div className='anchor' id='Social'></div>
       <div className='social-media'>
         <h2>Social media clips etc</h2>
-
         <Carousel
           ssr
-          // partialVisbile
-          // deviceType={deviceType}
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={2500}
@@ -66,13 +63,13 @@ const Outreach = () => {
           itemClass='image-item'
           responsive={responsive}
         >
-          {images.slice(0, 5).map((item, index) => {
+          {images.map((item, index) => {
             return (
               <img
                 key={index}
                 src={item}
                 alt={`social images${index + 1}`}
-                style={{ width: '400px', height: '500px' }}
+                style={{ width: '100%', height: '400px' }}
               />
             );
           })}
