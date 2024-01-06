@@ -22,18 +22,31 @@ const Outreach = () => {
     },
   };
   const images = [
-    'https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550133730-695473e544be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550167164-1b67c2be3973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550223640-23097fc71cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550330039-a54e15ed9d33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1549737328-8b9f3252b927?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1549833284-6a7df91c1f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1549985908-597a09ef0a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-    'https://images.unsplash.com/photo-1550064824-8f993041ffd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+    require('../../images/social/social_media_0.png'),
+    require('../../images/social/social_media_1.png'),
+    require('../../images/social/social_media_2.png'),
+    require('../../images/social/social_media_3.png'),
+    require('../../images/social/social_media_4.png'),
+    require('../../images/social/social_media_5.png'),
+    require('../../images/social/social_media_6.png'),
+    require('../../images/social/social_media_7.png'),
+    require('../../images/social/social_media_8.png'),
+    require('../../images/social/social_media_9.png'),
+    require('../../images/social/social_media_10.png'),
+    require('../../images/social/social_media_11.png'),
+    require('../../images/social/social_media_12.png'),
+    require('../../images/social/social_media_13.png'),
+    require('../../images/social/social_media_14.png'),
+    require('../../images/social/social_media_15.png'),
+    require('../../images/social/social_media_16.png'),
+    require('../../images/social/social_media_17.png'),
+    require('../../images/social/social_media_18.png'),
+    require('../../images/social/social_media_19.png'),
+    require('../../images/social/social_media_20.png'),
+    require('../../images/social/social_media_21.png'),
+    require('../../images/social/social_media_22.png'),
+    require('../../images/social/social_media_23.png'),
+    require('../../images/social/social_media_24.png'),
   ];
 
   return (
@@ -51,14 +64,15 @@ const Outreach = () => {
           autoPlaySpeed={2500}
           rewind={true}
           itemClass='image-item'
-          responsive={responsive}>
+          responsive={responsive}
+        >
           {images.slice(0, 5).map((item, index) => {
             return (
               <img
                 key={index}
                 src={item}
                 alt={`social images${index + 1}`}
-                style={{ width: '100%', height: '100%' }}
+                style={{ width: '100%', height: '100%', margin: '0 10px' }}
               />
             );
           })}
