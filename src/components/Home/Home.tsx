@@ -1,20 +1,20 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 // import Odometer from "react-odometerjs";
-import "odometer/themes/odometer-theme-default.css";
-import "./Home.css";
-import Carousel from "react-bootstrap/Carousel";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+import 'odometer/themes/odometer-theme-default.css';
+import './Home.css';
+import Carousel from 'react-bootstrap/Carousel';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 // import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import Card from 'react-bootstrap/Card';
 // import Carousel1 from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import 'react-multi-carousel/lib/styles.css';
 // import { home_carousel } from "./data";
 // import home_banner from '../../Assets/home banner_image.svg';
 // import { Link } from "react-router-dom";
-import { members } from "../../membersData/members";
+import { members } from '../../membersData/members';
 
 const Home = () => {
   const [value, setValue] = useState({
@@ -24,7 +24,7 @@ const Home = () => {
     fourth: 0,
   });
 
-  const [fade, setFade] = useState("d-none");
+  const [fade, setFade] = useState('d-none');
   const handleScroll = () => {
     const position = window.pageYOffset;
     if (position > 100) {
@@ -34,65 +34,65 @@ const Home = () => {
         third: 4.7,
         fourth: 1500,
       });
-      setFade("fadeInLeft");
+      setFade('fadeInLeft');
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
   return (
     <section>
-      <div className="anchor"  id="home"></div>
-      <div className="banner-sec fluid-container " >
-        <Carousel data-bs-theme="dark">
+      <div className='anchor' id='home'></div>
+      <div className='banner-sec fluid-container '>
+        <Carousel data-bs-theme='dark'>
           <Carousel.Item>
             <img
-              src={require("../../Assets1/banner/1.jpg")}
-              alt=""
-              className="desktop-view"
+              src={require('../../Assets1/banner/1.jpg')}
+              alt=''
+              className='desktop-view'
             />
             <img
-              src={require("../../Assets1/banner/mob1.jpg")}
-              alt=""
-              className="mobile-view d-none"
+              src={require('../../Assets1/banner/mob1.jpg')}
+              alt=''
+              className='mobile-view d-none'
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              src={require("../../Assets1/banner/2.jpg")}
-              alt=""
-              className="desktop-view"
+              src={require('../../Assets1/banner/2.jpg')}
+              alt=''
+              className='desktop-view'
             />
             <img
-              src={require("../../Assets1/banner/mob2.jpg")}
-              alt=""
-              className="mobile-view d-none"
+              src={require('../../Assets1/banner/mob2.jpg')}
+              alt=''
+              className='mobile-view d-none'
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              src={require("../../Assets1/banner/3.jpg")}
-              alt=""
-              className="desktop-view"
+              src={require('../../Assets1/banner/3.jpg')}
+              alt=''
+              className='desktop-view'
             />
             <img
-              src={require("../../Assets1/banner/mob3.jpg")}
-              alt=""
-              className="mobile-view d-none"
+              src={require('../../Assets1/banner/mob3.jpg')}
+              alt=''
+              className='mobile-view d-none'
             />
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="anchor"  id="about"></div>
-      <div className="About container">
-        <h1 className=" mt-5 head-title">
-          About{" "}
-          <span style={{ color: "#fff" }}>
-            <span style={{ color: "#f9a33f" }}>II</span>nven
-            <span style={{ color: "#f9a33f" }}>T</span>iv
+      <div className='anchor' id='about'></div>
+      <div className='About container'>
+        <h1 className=' mt-5 head-title'>
+          About{' '}
+          <span style={{ color: '#fff' }}>
+            <span style={{ color: '#f9a33f' }}>II</span>nven
+            <span style={{ color: '#f9a33f' }}>T</span>iv
           </span>
         </h1>
         <p>
@@ -101,33 +101,33 @@ const Home = () => {
           country are coming together to showcase the R&D happening there
         </p>
       </div>
-      <div className="anchor"  id="date"></div>
-      <div className="funfacts-inner container" >
-        <h1 className=" mt-5 head-title">Dates & Venue</h1>
+      <div className='anchor' id='date'></div>
+      <div className='funfacts-inner container'>
+        <h1 className=' mt-5 head-title'>Dates & Venue</h1>
 
-        <div className="row">
-          <div className="col-lg-5 col-5 col-sm-5 contain-border">
+        <div className='row'>
+          <div className='col-lg-5 col-5 col-sm-5 contain-border'>
             <div className={`animated ${fade}`}>
-              <div className="single-funfacts">
-                <div className="funfacts-style-two">
+              <div className='single-funfacts'>
+                <div className='funfacts-style-two'>
                   <h3>
                     {/* <Odometer format="d" value={value.first} /> */}
-                    <span className="odo-text"> DATES</span>
+                    <span className='odo-text'> DATES</span>
                   </h3>
                   <p>19-20, January 2024</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-5 col-sm-5 contain-border">
+          <div className='col-lg-5 col-5 col-sm-5 contain-border'>
             <div className={`animated ${fade}`}>
-              <div className="single-funfacts">
-                <div className="funfacts-style-two funfacts-style-P">
+              <div className='single-funfacts'>
+                <div className='funfacts-style-two funfacts-style-P'>
                   <h3>
                     {/* <Odometer format="(,ddd).dd" value={value.second} /> */}
-                    <span className="odo-text">VENUS</span>
+                    <span className='odo-text'>VENUE</span>
                   </h3>
-                  <p className="venue_para">
+                  <p className='venue_para'>
                     Convention Center, IIT Hyderabad Campus Kandi, Sangareddy,
                     Telangana – 502285
                   </p>
@@ -137,21 +137,19 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="anchor"  id="Participating"></div>
-      <div className="Participating container" >
-        <h1 className=" mt-5 head-title">Participating Institutes</h1>
+      <div className='anchor' id='Participating'></div>
+      <div className='Participating container'>
+        <h1 className=' mt-5 head-title'>Participating Institutes</h1>
         <Tabs
-          defaultActiveKey="IITs"
+          defaultActiveKey='IITs'
           transition={false}
-          id="noanim-tab-example"
-          className="my-3"
-        >
+          id='noanim-tab-example'
+          className='my-3'>
           <Tab
-            eventKey="IITs"
-            title="23 IITs"
-            style={{ height: "180px" }}
-            className="tabs_iit_para"
-          >
+            eventKey='IITs'
+            title='23 IITs'
+            style={{ height: '180px' }}
+            className='tabs_iit_para'>
             IIT Bhilai, IIT BHU, IIT Bhubaneswar, IIT Bombay, IIT Delhi, IIT
             Dharwad, IIT Gandhinagar, IIT Goa, IIT Guwahati, IIT Hyderabad, IIT
             Indore, IIT ISM Dhanbad, IIT Jammu, IIT Jodhpur, IIT Kanpur, IIT
@@ -159,11 +157,10 @@ const Home = () => {
             Roorkee, IIT Ropar, IIT Tirupati
           </Tab>
           <Tab
-            eventKey="NITs"
-            title="31 NITs "
-            style={{ height: "180px" }}
-            className="tabs_iit_para"
-          >
+            eventKey='NITs'
+            title='31 NITs '
+            style={{ height: '180px' }}
+            className='tabs_iit_para'>
             NIT Agartala, NIT Allahabad, NIT Andhra Pradesh, NIT Arunachal
             Pradesh, NIT Bhopal, NIT Calicut, NIT Delhi, NIT Durgapur, NIT Goa,
             NIT Hamirpur, NIT Jaipur, NIT Jalandhar, NIT Jamshedpur, NIT
@@ -173,29 +170,26 @@ const Home = () => {
             Surat, NIT Tiruchirappalli, NIT Uttarakhand, NIT Warangal
           </Tab>
           <Tab
-            eventKey="IISERs"
-            title="7 IISERs "
-            style={{ height: "180px" }}
-            className="tabs_iit_para"
-          >
+            eventKey='IISERs'
+            title='7 IISERs '
+            style={{ height: '180px' }}
+            className='tabs_iit_para'>
             IISER Berhampur, IISER Bhopal, IISER Kolkata, IISER Mohali, IISER
             Pune, IISER Thiruvananthapuram, IISER Tirupati
           </Tab>
           <Tab
-            eventKey="IIITs"
-            title="5 IIITs"
-            style={{ height: "180px" }}
-            className="tabs_iit_para"
-          >
+            eventKey='IIITs'
+            title='5 IIITs'
+            style={{ height: '180px' }}
+            className='tabs_iit_para'>
             IIIT Allahabad , IIIT Hyderabad, IIITDM Kurnool,IIITDM,
             Kancheepuram, IIITDM Jabalpur
           </Tab>
           <Tab
-            eventKey="Other"
-            title="Other Top 50 NIRF Engg Institutes "
-            style={{ height: "180px" }}
-            className="tabs_iit_para"
-          >
+            eventKey='Other'
+            title='Other Top 50 NIRF Engg Institutes '
+            style={{ height: '180px' }}
+            className='tabs_iit_para'>
             Aligarh Muslim University, Amity University, Amrita Vishwa
             Vidyapeetham, Anna University, Birla Institute of Technology &
             Science - Pilani, Chandigarh University, Delhi Technological
@@ -211,26 +205,31 @@ const Home = () => {
           </Tab>
         </Tabs>
       </div>
-      <div className="anchor"  id="committee"></div>
-      <div className="Committee container" >
-        <h1 className="mt-5 head-title">Steering Committee</h1>
-        <div className="chairman">
-          <h5 className="text-center my-4" style={{ color: "#fff" }}>
+      <div className='anchor' id='committee'></div>
+      <div className='Committee container'>
+        <h1 className='mt-5 head-title'>Steering Committee</h1>
+        <div className='chairman'>
+          <h5 className='text-center my-4' style={{ color: '#fff' }}>
             CHAIRMAN & CONVENOR
           </h5>
-          <div className="row justify-content-center">
-            <div className="col-md-6 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
+          <div className='row justify-content-center'>
+            <div className='col-md-6 d-flex justify-content-center my-3'>
+              <Card
+                style={{ width: '18rem', backgroundColor: 'transparent' }}
+                className='card_all_members'>
                 <h5
-                  className="card_heading"
-                  style={{ padding: "10px 0px", textAlign: "center" }}
-                >
+                  className='card_heading'
+                  style={{ padding: '10px 0px', textAlign: 'center' }}>
                   Chairman
                 </h5>
-               
-                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
+
+                <Card.Body
+                  style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '0 0 10px 10px',
+                  }}>
                   <Card.Title>Dr. B.V.R. Mohan Reddy</Card.Title>
-                  <Card.Text style={{ color: "#000" }}>
+                  <Card.Text style={{ color: '#000' }}>
                     Founding Chairman, Cyient Ltd. Chairman, BoG IIT Hyderabad &
                     IIT Roorkee
                   </Card.Text>
@@ -238,18 +237,23 @@ const Home = () => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-md-6 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
+            <div className='col-md-6 d-flex justify-content-center my-3'>
+              <Card
+                style={{ width: '18rem', backgroundColor: 'transparent' }}
+                className='card_all_members'>
                 <h5
-                  className="card_heading"
-                  style={{ padding: "10px 0px", textAlign: "center" }}
-                >
+                  className='card_heading'
+                  style={{ padding: '10px 0px', textAlign: 'center' }}>
                   Convenor
                 </h5>
-                
-                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
+
+                <Card.Body
+                  style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '0 0 10px 10px',
+                  }}>
                   <Card.Title>Prof. B.S. Murty</Card.Title>
-                  <Card.Text style={{ color: "#000" }}>
+                  <Card.Text style={{ color: '#000' }}>
                     Director, IIT Hyd
                   </Card.Text>
                   {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
@@ -258,84 +262,31 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="coordinators">
-          <h5 className="text-center my-4" style={{ color: "#fff" }}>
-            PERMANENT INVITEES/COORDINATORS
+        <div className='members'>
+          <h5 className='text-center my-4' style={{ color: '#fff' }}>
+            MEMBERS
           </h5>
-          <div className="row justify-content-center">
-            <div className="col-md-4 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
-                <h5
-                  className="card_heading"
-                  style={{ padding: "10px 0px", textAlign: "center" }}
-                >
-                  Coordinator
-                </h5>
-                
-                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
-                  <Card.Title>
-                    Prof. Chandra Shekhar Sharma Dean (SRC)
-                  </Card.Title>
-                  <Card.Text style={{ color: "#000" }}>IIT Hyderabad</Card.Text>
-                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col-md-4 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem",backgroundColor:"transparent" }} className="card_all_members">
-                <h5
-                  className="card_heading"
-                  style={{ padding: "10px 0px", textAlign: "center" }}
-                >
-                  Special Invitee
-                </h5>
-               
-                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
-                  <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
-                  <Card.Text style={{ color: "#000" }}>IIT Bombay</Card.Text>
-                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col-md-4 d-flex justify-content-center my-3">
-              <Card style={{ width: "18rem",backgroundColor:"transparent"  }} className="card_all_members">
-                <h5
-                  className="card_heading"
-                  style={{ padding: "10px 0px", textAlign: "center" }}
-                >
-                  Coordinator
-                </h5>
-                
-                <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
-                  <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
-                  <Card.Text style={{ color: "#000" }}>IIT Hyderabad</Card.Text>
-                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
-        </div>
-        <div className="members">
-          <h5 className="text-center my-4" style={{ color: "#fff" }}>
-            OTHER MEMBER
-          </h5>
-          <div className="row justify-content-center">
+          <div className='row justify-content-center'>
             {members.map((member: any) => (
               <div
-                className="col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3"
-                key={member.id}
-              >
-                <Card style={{ width: "15rem", backgroundColor:"transparent" }} className="card_all_members">
+                className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                key={member.id}>
+                <Card
+                  style={{ width: '15rem', backgroundColor: 'transparent' }}
+                  className='card_all_members'>
                   <h5
-                    className="card_heading"
-                    style={{ padding: "10px 0px", textAlign: "center" }}
-                  >
+                    className='card_heading'
+                    style={{ padding: '10px 0px', textAlign: 'center' }}>
                     {member.title}
                   </h5>
-                  
-                  <Card.Body style={{backgroundColor:"#fff", borderRadius:"0 0 10px 10px"}}>
+
+                  <Card.Body
+                    style={{
+                      backgroundColor: '#fff',
+                      borderRadius: '0 0 10px 10px',
+                    }}>
                     <Card.Title>{member.name}</Card.Title>
-                    <Card.Text style={{ color: "#000" }}>
+                    <Card.Text style={{ color: '#000' }}>
                       {member.affiliations}
                     </Card.Text>
                     {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
@@ -358,22 +309,94 @@ const Home = () => {
           </div> */}
           </div>
         </div>
+        <div className='coordinators'>
+          <h5 className='text-center my-4' style={{ color: '#fff' }}>
+            PERMANENT INVITEES/COORDINATORS
+          </h5>
+          <div className='row justify-content-center'>
+            <div className='col-md-4 d-flex justify-content-center my-3'>
+              <Card
+                style={{ width: '18rem', backgroundColor: 'transparent' }}
+                className='card_all_members'>
+                <h5
+                  className='card_heading'
+                  style={{ padding: '10px 0px', textAlign: 'center' }}>
+                  Coordinator
+                </h5>
+
+                <Card.Body
+                  style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '0 0 10px 10px',
+                  }}>
+                  <Card.Title>
+                    Prof. Chandra Shekhar Sharma Dean (SRC)
+                  </Card.Title>
+                  <Card.Text style={{ color: '#000' }}>IIT Hyderabad</Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+            <div className='col-md-4 d-flex justify-content-center my-3'>
+              <Card
+                style={{ width: '18rem', backgroundColor: 'transparent' }}
+                className='card_all_members'>
+                <h5
+                  className='card_heading'
+                  style={{ padding: '10px 0px', textAlign: 'center' }}>
+                  Special Invitee
+                </h5>
+
+                <Card.Body
+                  style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '0 0 10px 10px',
+                  }}>
+                  <Card.Title>Prof. Upendra V. Bhandarkar </Card.Title>
+                  <Card.Text style={{ color: '#000' }}>IIT Bombay</Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+            <div className='col-md-4 d-flex justify-content-center my-3'>
+              <Card
+                style={{ width: '18rem', backgroundColor: 'transparent' }}
+                className='card_all_members'>
+                <h5
+                  className='card_heading'
+                  style={{ padding: '10px 0px', textAlign: 'center' }}>
+                  Coordinator
+                </h5>
+
+                <Card.Body
+                  style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '0 0 10px 10px',
+                  }}>
+                  <Card.Title>Prof. S Suryakumar Dean (ITS) </Card.Title>
+                  <Card.Text style={{ color: '#000' }}>IIT Hyderabad</Card.Text>
+                  {/* <Button variant="primary" className="card_button">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="anchor"  id="IInvenTiv"></div>
-      <div className="IInvenTiv container" >
-        <h1 className="mt-5 head-title">
-          {" "}
-          <span style={{ color: "#fff" }}>
-            <span style={{ color: "#f9a33f" }}>II</span>nven
-            <span style={{ color: "#f9a33f" }}>T</span>iv
-          </span>{" "}
+      <div className='anchor' id='IInvenTiv'></div>
+      <div className='IInvenTiv container'>
+        <h1 className='mt-5 head-title'>
+          {' '}
+          <span style={{ color: '#fff' }}>
+            <span style={{ color: '#f9a33f' }}>II</span>nven
+            <span style={{ color: '#f9a33f' }}>T</span>iv
+          </span>{' '}
           2022
         </h1>
         <p>
           For the first time, all the 23 IITs of the country have come together
           for a mega Research & Development Fair which was held from October
           14-15, 2022 at the Indian Institute of Technology Delhi premises. The
-          inaugural session was graced by{" "}
+          inaugural session was graced by{' '}
           <b>
             Hon’ble Union Minister for Education and Skill Development and
             Entrepreneurship Shri Dharmendra Pradhan.
@@ -396,7 +419,7 @@ const Home = () => {
         </p>
         <ul>
           <h4>
-            {" "}
+            {' '}
             There were ten broad themes identified in focused areas for the
             event:
           </h4>
@@ -445,7 +468,6 @@ const Home = () => {
           present among the other invitees.
         </p>
       </div>
-      
     </section>
   );
 };

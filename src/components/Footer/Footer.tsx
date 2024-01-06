@@ -1,22 +1,22 @@
 /** @format */
 
-import React from "react";
-import "./footer.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="light x1"></div>
-      <div className="light x2"></div>
-      <div className="light x3"></div>
-      <div className="light x4"></div>
-      <div className="light x5"></div>
-      <div className="light x6"></div>
-      <div className="light x7"></div>
-      <div className="light x8"></div>
-      <div className="light x9"></div>
-      <hr />
+    <div className='footer'>
+      <div className='light x1'></div>
+      <div className='light x2'></div>
+      <div className='light x3'></div>
+      <div className='light x4'></div>
+      <div className='light x5'></div>
+      <div className='light x6'></div>
+      <div className='light x7'></div>
+      <div className='light x8'></div>
+      <div className='light x9'></div>
+
       {/* <div className="container-fluid">
         <div className="bottom-area">
           <div className="row">
@@ -101,12 +101,12 @@ const Footer = () => {
           </div>
         </div>
       </div> */}
-      <div className="CopyRight mx-auto">
-        <div className="row align-item-center">
-          <div className="col-6 text-start">
+      <div className='CopyRight mx-auto'>
+        <div className='row align-item-center'>
+          <div className='col-6 text-start'>
             <p>Copyright@2024 IInvenTiv All Rights reserved</p>
           </div>
-          <div className="col-6 text-end">
+          <div className='col-6 text-end'>
             <p>for more information contact: iinventive@iith.ac.in</p>
           </div>
         </div>

@@ -9,6 +9,15 @@ const Logistics = () => {
       <div className='how-to-reach container'>
         <h2>How to Reach IIT Hyderabad</h2>
         <div className='reach'>
+          <div>
+            <h4>IITH HYDERABAD MAP LOCATION</h4>
+            <iframe
+              title='IITH HYDERABAD MAP'
+              src='https://www.google.com/maps/d/embed?mid=1AygFuF3mhEK2TGCulRQGbWbvv_UoECQ&ehbc=2E312F'
+              width='100%'
+              height='400px'
+              style={{ borderRadius: '15px' }}></iframe>
+          </div>
           <h4>From Airport (64km)</h4>
           <ul>
             <li>Get on ORR in Gandiguda from Airport Approach Road</li>
