@@ -14,7 +14,7 @@ const Program_Guide = () => {
               Event Program Schedule with CC layout/Stalls layout/VIP layout
             </h4>
             <div className='wrapper'>
-              <h1> Day 1 (January 19, 2024):</h1>
+              <h3> Day 1 (January 19, 2024):</h3>
               <ul className='sessions'>
                 <li>
                   <div className='time'>09.30-10:30</div>
@@ -66,7 +66,7 @@ const Program_Guide = () => {
                   </p>
                 </li>
               </ul>
-              <h1 className='mt-5'>Day 2 (January 20, 2024)</h1>
+              <h3 className='mt-5'>Day 2 (January 20, 2024)</h3>
               <ul className='sessions'>
                 <li>
                   <div className='time'>10:00-13:00</div>
@@ -112,7 +112,7 @@ const Program_Guide = () => {
         <div className='anchor' id='Panel'></div>
         <div className='panal-discussion container'>
           <h2>Panel Discussion Forums</h2>
-          <div className='my-4'>
+          <div className='my-4 discussion'>
             <h4>Affordable Healthcare:</h4>
             <ol>
               <li>Mr. Rajaneesh kini, CTO, Cyient Ltd</li>
@@ -134,17 +134,17 @@ const Program_Guide = () => {
               <li>Mr. Rajasekhar, Chief Operating Officer, CSA</li>
             </ol>
             <h4>Industry 4.0: </h4>
-            <ol>
+            {/* <ol>
               <li></li>
-            </ol>
+            </ol> */}
             <h4>Defense & Space: </h4>
-            <ol>
+            {/* <ol>
               <li></li>
-            </ol>
+            </ol> */}
             <h4>Sustainable Technologies: </h4>
-            <ol>
+            {/* <ol>
               <li></li>
-            </ol>
+            </ol> */}
           </div>
         </div>
         <div className='anchor' id='Layout'></div>

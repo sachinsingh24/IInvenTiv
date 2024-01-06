@@ -10,6 +10,14 @@
     padding-bottom: 25px;
 }
 
+.layout {
+    padding-bottom: 25px;
+}
+
+.panal-discussion .discussion {
+    padding-left: 20px;
+}
+
 
 @mixin tablet-and-up {
     @media screen and (min-width: 769px) {
@@ -54,14 +62,15 @@
     flex-direction: column;
 }
 
-.containerSchedule .wrapper h1 {
-    color: #191e47;
-}
 
 .wrapper {
     background: #eaf6ff;
     padding: 2rem;
     border-radius: 15px;
+}
+
+.wrapper h3 {
+    color: #4f4f4f;
 }
 
 .sessions {
