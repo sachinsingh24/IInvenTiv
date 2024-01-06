@@ -13,7 +13,7 @@ const Messages = () => {
         <h2>Message from the Chairman</h2>
         <img src={require("../../images/message/Message BoG Chair.jpg")} alt="" width="70%" />
       </div>
-      <div className="anchor" id="Chief"></div>
+{/*       <div className="anchor" id="Chief"></div>
       <div className="Chief container">
         <h2>Message from the Chief Guest</h2>
         <img src={require("../../images/message/message_3.png")} alt="" width="70%" />
@@ -22,7 +22,7 @@ const Messages = () => {
       <div className="Director container">
         <h2>Message from the Director</h2>
         <img src={require("../../images/message/message_4.png")} alt="" width="70%" />
-      </div>
+      </div> */}
     </section>
   );
 };
