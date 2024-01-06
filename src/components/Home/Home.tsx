@@ -7,6 +7,8 @@ import './Home.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import ReactBootstrapCarousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 // import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 // import Carousel1 from "react-multi-carousel";
@@ -43,6 +45,51 @@ const Home = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+      paritialVisibilityGutter: 60,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+      paritialVisibilityGutter: 50,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      paritialVisibilityGutter: 30,
+    },
+  };
+  const images = [
+    require('../../images/social/social_media_0.png'),
+    require('../../images/social/social_media_1.png'),
+    require('../../images/social/social_media_2.png'),
+    require('../../images/social/social_media_3.png'),
+    require('../../images/social/social_media_4.png'),
+    require('../../images/social/social_media_5.png'),
+    require('../../images/social/social_media_6.png'),
+    require('../../images/social/social_media_7.png'),
+    require('../../images/social/social_media_8.png'),
+    require('../../images/social/social_media_9.png'),
+    require('../../images/social/social_media_10.png'),
+    require('../../images/social/social_media_11.png'),
+    require('../../images/social/social_media_12.png'),
+    require('../../images/social/social_media_13.png'),
+    require('../../images/social/social_media_14.png'),
+    require('../../images/social/social_media_15.png'),
+    require('../../images/social/social_media_16.png'),
+    require('../../images/social/social_media_17.png'),
+    require('../../images/social/social_media_18.png'),
+    require('../../images/social/social_media_19.png'),
+    require('../../images/social/social_media_20.png'),
+    require('../../images/social/social_media_21.png'),
+    require('../../images/social/social_media_22.png'),
+    require('../../images/social/social_media_23.png'),
+    require('../../images/social/social_media_24.png'),
+  ];
   return (
     <section>
       <div className='anchor' id='home'></div>
@@ -467,6 +514,34 @@ const Home = () => {
           Council and BoG IIT Kanpur; and all the Directors of the IITs were
           present among the other invitees.
         </p>
+        <div className='social-media container'>
+          <h2 style={{ color: '#fff' }}>Social media news and clips</h2>
+          <ReactBootstrapCarousel
+            ssr={true}
+            // partialVisbile
+            // deviceType={deviceType}
+            swipeable={true}
+            draggable={true}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2500}
+            rewind={true}
+            centerMode={false}
+            removeArrowOnDeviceType={['tablet', 'mobile']}
+            itemClass='image-item'
+            responsive={responsive}>
+            {images.map((item, index) => {
+              return (
+                <img
+                  key={index}
+                  src={item}
+                  alt={`social images${index + 1}`}
+                  style={{ width: '100%', height: '350px' }}
+                />
+              );
+            })}
+          </ReactBootstrapCarousel>
+        </div>
       </div>
     </section>
   );
