@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <section className='contact-section'>
-      <div className='contact-details'>
+      <div className='contact-details container'>
         <h3>IInvenTiv Secretariat contact info</h3>
         <p>Email: iinventive@iith.ac.in</p>
         <p>Contact: 04023016208</p>

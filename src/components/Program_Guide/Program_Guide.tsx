@@ -4,7 +4,7 @@ const Program_Guide = () => {
   return (
     <>
       <section className="program-guide-section">
-        <div className="panal-discussion">
+        <div className="panal-discussion container">
           <h2>Affordable Healthcare:</h2>
           <ol>
             <li>Mr. Rajaneesh kini, CTO, Cyient Ltd</li>

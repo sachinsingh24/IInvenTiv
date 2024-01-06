@@ -3,7 +3,7 @@ import './Logistics.css'
 const Logistics = () => {
   return (
     <section className='logistic-section'>
-      <div className='how-to-reach'>
+      <div className='how-to-reach container'>
         <h2>How to Reach IIT Hyderabad</h2>
         <h3>From Airport (64km)</h3>
         <ul>
