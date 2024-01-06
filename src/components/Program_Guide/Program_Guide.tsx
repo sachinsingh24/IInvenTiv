@@ -150,6 +150,27 @@ const Program_Guide = () => {
         <div className='anchor' id='Layout'></div>
         <div className='layout container'>
           <h2>Layout of Venue</h2>
+          <span>
+            Download:
+            <a
+              href={require('../../Assets1/IInvenTive-2024 Technical program.pdf')}
+              download={'IInvenTive-2024 Technical program'}
+              target='_blank'
+              rel='noreferrer'>
+              {' '}
+              <button
+                type='button'
+                className='btn btn-info btn-md'
+                style={{
+                  fontWeight: '600',
+                  backgroundColor: 'rgb(21, 68, 137)',
+                  border: '1px rgb(21, 68, 137)',
+                  color: '#fff',
+                }}>
+                IInvenTiv Event Layout
+              </button>
+            </a>
+          </span>
         </div>
       </section>
     </>
