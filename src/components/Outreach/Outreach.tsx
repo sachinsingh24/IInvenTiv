@@ -72,7 +72,7 @@ const Outreach = () => {
                 key={index}
                 src={item}
                 alt={`social images${index + 1}`}
-                style={{ width: '100%', height: '100%', margin: '0 10px' }}
+                style={{ width: '400px', height: '500px' }}
               />
             );
           })}
