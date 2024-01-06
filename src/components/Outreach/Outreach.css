@@ -9,7 +9,7 @@
     padding-bottom: 50px;
 }
 .react-multi-carousel-track li{
-    padding-left: 2px;
+    width: 410px !important;
 }
 /* @media screen and (max-width: 450px) {
     .react-multi-carousel-track li{

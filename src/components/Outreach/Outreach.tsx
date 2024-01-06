@@ -52,7 +52,7 @@ const Outreach = () => {
   return (
     <section className='outreach-section'>
       <div className='anchor' id='Social'></div>
-      <div className='social-media container'>
+      <div className='social-media'>
         <h2>Social media clips etc</h2>
 
         <Carousel
