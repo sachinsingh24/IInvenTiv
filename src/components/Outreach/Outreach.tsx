@@ -80,6 +80,25 @@ const Outreach = () => {
           })}
         </Carousel>
       </div>
+      <div className='social-container container'>
+        <ul className='social-icons'>
+          <li>
+            <a href='https://www.facebook.com/IInvenTiv/'>
+              <i className='fa fa-facebook'></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://twitter.com/iinventivIIT'>
+              <i className='fa fa-twitter'></i>
+            </a>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/iinventiv-iith-b6a75429b/'>
+              <i className='fa fa-linkedin'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className='anchor' id='Register'></div>
       <div className='register container pb-5'>
         <h2>Register</h2>
@@ -90,7 +109,15 @@ const Outreach = () => {
           the event:{' '}
         </p>
         <a href='https://forms.gle/4q2syxLsh5C9AmSt5'>
-          <button type='button' className='btn btn-secondary btn-md'>
+          <button
+            type='button'
+            className='btn btn-secondary btn-md'
+            style={{
+              fontWeight: '600',
+              backgroundColor: 'rgb(21, 68, 137)',
+              border: '1px rgb(21, 68, 137)',
+              color: '#fff',
+            }}>
             Register Now
           </button>
         </a>
