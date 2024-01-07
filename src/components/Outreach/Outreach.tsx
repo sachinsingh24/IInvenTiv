@@ -22,31 +22,21 @@ const Outreach = () => {
     },
   };
   const images = [
-    require('../../images/social/social_media_0.png'),
-    require('../../images/social/social_media_1.png'),
-    require('../../images/social/social_media_2.png'),
-    require('../../images/social/social_media_3.png'),
-    require('../../images/social/social_media_4.png'),
-    require('../../images/social/social_media_5.png'),
-    require('../../images/social/social_media_6.png'),
-    require('../../images/social/social_media_7.png'),
-    require('../../images/social/social_media_8.png'),
-    require('../../images/social/social_media_9.png'),
-    require('../../images/social/social_media_10.png'),
-    require('../../images/social/social_media_11.png'),
-    require('../../images/social/social_media_12.png'),
-    require('../../images/social/social_media_13.png'),
-    require('../../images/social/social_media_14.png'),
-    require('../../images/social/social_media_15.png'),
-    require('../../images/social/social_media_16.png'),
-    require('../../images/social/social_media_17.png'),
-    require('../../images/social/social_media_18.png'),
-    require('../../images/social/social_media_19.png'),
-    require('../../images/social/social_media_20.png'),
-    require('../../images/social/social_media_21.png'),
-    require('../../images/social/social_media_22.png'),
-    require('../../images/social/social_media_23.png'),
-    require('../../images/social/social_media_24.png'),
+    require('../../images/newsClip/Social Media Post.jpg'),
+    require('../../images/newsClip/2.jpg'),
+    require('../../images/newsClip/3.jpg'),
+    require('../../images/newsClip/4.jpg'),
+    require('../../images/newsClip/5.jpg'),
+    require('../../images/newsClip/6.jpg'),
+    require('../../images/newsClip/7.jpg'),
+    require('../../images/newsClip/8.jpg'),
+    require('../../images/newsClip/9.jpg'),
+    require('../../images/newsClip/10.jpg'),
+    require('../../images/newsClip/11.jpg'),
+    require('../../images/newsClip/12.jpg'),
+    require('../../images/newsClip/13.jpg'),
+    require('../../images/newsClip/14.jpg'),
+    require('../../images/newsClip/15.jpg'),
   ];
 
   return (
@@ -74,7 +64,10 @@ const Outreach = () => {
                 key={index}
                 src={item}
                 alt={`social images${index + 1}`}
-                style={{ width: '100%', height: '350px' }}
+                style={{
+                  width: '400px',
+                  height: '350px',
+                }}
               />
             );
           })}
