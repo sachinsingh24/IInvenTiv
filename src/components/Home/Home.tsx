@@ -222,11 +222,10 @@ const Home = () => {
           </Tab>
           <Tab
             eventKey='IIITs'
-            title='5 IIITs'
+            title='6 IIITs'
             style={{ height: '180px' }}
             className='tabs_iit_para'>
-            IIIT Allahabad , IIIT Hyderabad, IIITDM Kurnool,IIITDM,
-            Kancheepuram, IIITDM Jabalpur
+            IIIT Allahabad , IIIT Hyderabad, IIITM Gwalior, IIITDM Kurnool,IIITDM, Kancheepuram,  IIITDM Jabalpur
           </Tab>
           <Tab
             eventKey='Other'
