@@ -153,7 +153,7 @@ const Program_Guide = () => {
           <span>
             Download:
             <a
-              href={require('../../Assets1/IInvenTive-2024 Technical program.pdf')}
+              href={require('../../Assets1/IInvenTiv-2024 Layout Map.pdf')}
               download={'IInvenTive-2024 Technical program'}
               target='_blank'
               rel='noreferrer'>
