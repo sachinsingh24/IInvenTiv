@@ -529,7 +529,7 @@ const Home = () => {
                   key={index}
                   src={item}
                   alt={`social images${index + 1}`}
-                  style={{ width: '100%', height: '350px' }}
+                  style={{ width: '100%', height: 'auto' }}
                 />
               );
             })}
