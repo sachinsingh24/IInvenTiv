@@ -4,7 +4,7 @@ const Showcase = () => {
     <section className="showcase-section">
       <div className="Healthcare container">
         <h2>
-          The Iinventive 2024 will showcase Innovations in the following five
+          The IInvenTiv 2024 will showcase Innovations in the following five
           different themes:
         </h2>
         <ul>
