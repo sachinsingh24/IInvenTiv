@@ -509,8 +509,15 @@ const Home = () => {
           Council and BoG IIT Kanpur; and all the Directors of the IITs were
           present among the other invitees.
         </p>
-        <div className='social-media container'>
-          <h2 style={{ color: '#fff' }}>Social media news and clips</h2>
+         <div className='social-media container pt-0'>
+          <h2 className=' head-title'>
+            Glimpse of
+            <span style={{ color: '#fff' }}>
+              <span style={{ color: '#f9a33f' }}> II</span>nven
+              <span style={{ color: '#f9a33f' }}>T</span>iv
+            </span>{' '}
+            2022
+          </h2>
           <ReactBootstrapCarousel
             ssr={true}
             // partialVisbile
