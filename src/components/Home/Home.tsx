@@ -85,10 +85,6 @@ const Home = () => {
     require('../../images/social/social_media_18.png'),
     require('../../images/social/social_media_19.png'),
     require('../../images/social/social_media_20.png'),
-    require('../../images/social/social_media_21.png'),
-    require('../../images/social/social_media_22.png'),
-    require('../../images/social/social_media_23.png'),
-    require('../../images/social/social_media_24.png'),
   ];
   return (
     <section>
