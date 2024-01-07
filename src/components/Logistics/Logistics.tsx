@@ -133,11 +133,11 @@ const Logistics = () => {
             <li>Student Hostel Coordinator:</li>
             <li>Security:</li>
           </ul>
-          <h4>Transportation</h4>
+{/*           <h4>Transportation</h4>
           <span>
             Transportation will be provided for all the participants on January
             19, 2024 from Airport/Railway Stations/Miyapur Metro Station
-          </span>
+          </span> */}
         </div>
       </div>
       <div className='anchor' id='hotels'></div>
