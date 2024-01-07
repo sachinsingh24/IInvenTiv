@@ -13,7 +13,7 @@ const Logistics = () => {
             <h4>IITH HYDERABAD MAP LOCATION</h4>
             <iframe
               title='IITH HYDERABAD MAP'
-              src='https://www.google.com/maps/d/embed?mid=1AygFuF3mhEK2TGCulRQGbWbvv_UoECQ&ehbc=2E312F'
+              src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15213.144684492989!2d78.11695302065431!3d17.589140677589807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf14c69772b9d%3A0xd602d0764305502c!2sIndian%20Institute%20of%20Technology%20(IIT)%20Hyderabad%20Main%20Entrance!5e0!3m2!1sen!2sin!4v1704650081952!5m2!1sen!2sin'
               width='100%'
               height='400px'
               style={{ borderRadius: '15px' }}></iframe>
