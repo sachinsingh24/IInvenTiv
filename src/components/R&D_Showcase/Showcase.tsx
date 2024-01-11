@@ -1,8 +1,10 @@
-import "./Showcase.css";
+/** @format */
+
+import './Showcase.css';
 const Showcase = () => {
   return (
-    <section className="showcase-section">
-      <div className="Healthcare container">
+    <section className='showcase-section'>
+      <div className='Healthcare container'>
         <h2>
           The IInvenTiv 2024 will showcase Innovations in the following five
           different themes:
@@ -14,8 +16,8 @@ const Showcase = () => {
           <li>Defense & Space</li>
           <li> Sustainable Technologies</li>
         </ul>
-        <div className="anchor" id="Healthcare"></div>
-        <div className="Affordable">
+        <div className='anchor' id='Healthcare'></div>
+        <div className='Affordable'>
           <h2>Affordable Healthcare</h2>
           <ol>
             <li>
@@ -27,12 +29,10 @@ const Showcase = () => {
               using Incremental Forming [IIT Bhubaneswar]
             </li>
             <li>
-              Chimeric Antigen receptor T- cell (CAR-T) therapy for cancer cure.
+              Chimeric Antigen receptor T-cell (CAR-T) therapy for cancer cure.
               [IIT Bombay]
             </li>
-            <li>
-              Development of Ophthalmic and Orthopedic Implants [IIT Delhi]
-            </li>
+            <li>Ocular Drug Delivery Device [IIT Delhi]</li>
             <li>
               INSTROLE: Instrumented Smart Shoe Insole for Quantifying Gait [IIT
               Gandhinagar]
@@ -66,7 +66,7 @@ const Showcase = () => {
             </li>
             <li>Fruit & Vegetable waste derived Nutraceutical [VNIT Nagpur]</li>
             <li>
-              AI based Based Quantitative Platform Measuring Tumor Subcomponent
+              AI-based Quantitative Platform Measuring Tumor Subcomponent
               Geometry as Definitive of Gene Mutation Status using MR Images:
               Bypassing [IISER Berhumpur]
             </li>
@@ -81,8 +81,8 @@ const Showcase = () => {
               Pune]
             </li>
             <li>
-              Developing a rapid, user friendly, affordable kit for accurate
-              Malaria detection under resource constrained settings [IISER Pune]
+              Developing a rapid, user-friendly, affordable kit for accurate
+              Malaria detection under resource-constrained settings [IISER Pune]
             </li>
             <li>
               Design and Measurements of mmWave FMCW Radar-Based Non-Contact
@@ -102,9 +102,11 @@ const Showcase = () => {
               Sample-to-Answer Biomarker Detection [BITS]
             </li>
             <li>
-              Single benzenoid green emitting fluorescent linkers for invitro
-              imaging and flow cytometry [BITS] Mini Medico Man [Kalasalingam
-              Academy of Research and Education]
+              Single benzenoid green emitting fluorescent linkers for in vitro
+              imaging and flow cytometry [BITS]
+            </li>
+            <li>
+              Mini Medico Man [Kalasalingam Academy of Research and Education]
             </li>
             <li>
               Non-invasive Ultrasound Bone Densitometer for estimating bone
@@ -125,9 +127,9 @@ const Showcase = () => {
               Syndrome [Sri Sivasubramaniya Nadar College of Engineering]
             </li>
             <li>
-              “Development of automated breast cancer diagnosis system using
-              deep learning network in HARDWARE ACCELERATION BOARD.” [SRM
-              Institute of Science and Tech.]
+              Development of automated breast cancer diagnosis system using deep
+              learning network in HARDWARE ACCELERATION BOARD. [SRM Institute of
+              Science and Tech.]
             </li>
             <li>
               C3 Fields: Head mount Portable device for Visual Field Perimetry
@@ -139,8 +141,8 @@ const Showcase = () => {
             </li>
           </ol>
         </div>
-        <div className="anchor" id="Agriculture"></div>
-        <div className="Agriculture">
+        <div className='anchor' id='Agriculture'></div>
+        <div className='Agriculture'>
           <h2>Agriculture & Food Processing</h2>
           <ol>
             <li>
@@ -218,8 +220,8 @@ const Showcase = () => {
             </li>
           </ol>
         </div>
-        <div className="anchor" id="Industry"></div>
-        <div className="Industry ">
+        <div className='anchor' id='Industry'></div>
+        <div className='Industry '>
           <h2>Industry 4.0</h2>
           <ol>
             <li>
@@ -273,8 +275,8 @@ const Showcase = () => {
             </li>
           </ol>
         </div>
-        <div className="anchor" id="Defense"></div>
-        <div className="Defense">
+        <div className='anchor' id='Defense'></div>
+        <div className='Defense'>
           <h2>Defense & Space</h2>
           <ol>
             <li>
@@ -340,8 +342,8 @@ const Showcase = () => {
             </li>
           </ol>
         </div>
-        <div className="anchor" id="Sustainable"></div>
-        <div className="Sustainable">
+        <div className='anchor' id='Sustainable'></div>
+        <div className='Sustainable'>
           <h2>Sustainable Technologies</h2>
           <ol>
             <li>
