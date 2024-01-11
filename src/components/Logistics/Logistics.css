@@ -27,3 +27,19 @@
     color: #4f4f4f;
     font-size: 15px;
 }
+
+.hotels {
+    background-color: #202148;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.hotels span {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.hotels span h6 {
+    margin-right: 10px;
+}

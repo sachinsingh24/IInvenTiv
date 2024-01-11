@@ -133,7 +133,7 @@ const Logistics = () => {
             <li>Student Hostel Coordinator:</li>
             <li>Security:</li>
           </ul>
-{/*           <h4>Transportation</h4>
+          {/*           <h4>Transportation</h4>
           <span>
             Transportation will be provided for all the participants on January
             19, 2024 from Airport/Railway Stations/Miyapur Metro Station
@@ -142,7 +142,119 @@ const Logistics = () => {
       </div>
       <div className='anchor' id='hotels'></div>
       <div className='Nearby container'>
-        <h2>Nearby Hotels</h2>
+        <h2 className='mb-4'>Nearby Hotels</h2>
+        <div className='hotels mb-4'>
+          <h4>1.Hotel Lemon Tree, Gachibowli</h4>
+          <span>
+            <h6>Details:</h6>
+            <p>
+              <strong>Distance from IIT Hyderabad:</strong> 38 kms
+              <br />
+              <strong>Time:</strong> 50 minutes
+              <br />
+            </p>
+          </span>
+          <span>
+            <h6>Tariff:</h6>
+            <p>
+              <strong>Superior Room:</strong> ₹6000/₹7000 (Single/double
+              occupancy) + Taxes
+              <br />
+              <strong>Deluxe Room:</strong> ₹7000/₹8000 (Single/double
+              occupancy) + Taxes
+              <br />
+            </p>
+          </span>
+
+          <span>
+            <h6>Room Rates Include:</h6>
+            <ul>
+              <li>Buffet Breakfast at Citrus Café (Coffee shop)</li>
+              <li>Complimentary WIFI for up to 2 devices per person</li>
+              <li>Unlimited internet usage at the business center</li>
+              <li>Usage of Fitness Center and swimming pool</li>
+            </ul>
+          </span>
+          <span>
+            <h6>Contact Person details:</h6>
+            <p>
+              <strong>Uday Chandra</strong>
+              <br />
+              Associate Director of Sales
+              <br />
+              Lemon Tree Hotel Gachibowli
+              <br />
+              Lane Behind ICICI Bank, Opposite Q city
+              <br />
+              Survey No 115/1, Financial District, Nanakramguda, Hyderabad
+              500032
+              <br />
+              T: +91 40 44141414 | M: +91 8008200189
+              <br />
+              Website:{' '}
+              <a
+                href='http://www.lemontreehotels.com'
+                target='_blank'
+                rel='noreferrer'>
+                www.lemontreehotels.com
+              </a>{' '}
+              |{' '}
+              <a
+                href='http://www.aurikahotels.com'
+                target='_blank'
+                rel='noreferrer'>
+                www.aurikahotels.com
+              </a>{' '}
+              |{' '}
+              <a
+                href='http://www.keyshotels.com'
+                target='_blank'
+                rel='noreferrer'>
+                www.keyshotels.com
+              </a>
+              <br />
+              For further information call: +91 9911 701 701
+            </p>
+          </span>
+          <h4>
+            2.Redla's Inn (
+            <a href='https://redlas.in' target='_blank' rel='noreferrer'>
+              redlas.in
+            </a>
+            ){' '}
+          </h4>
+          <span>
+            <h6>Details:</h6>
+            <p>
+              <strong>Distance from IIT Hyderabad:</strong> 8 kms
+              <br />
+              <strong>Time:</strong> 15 minutes
+              <br />
+            </p>
+          </span>
+          <span>
+            <h6>Tariff:</h6>
+            <p>
+              <strong>A/C Standard Rooms:</strong> : 2250/2950 (Single/Double
+              Occupancy) + Taxes
+              <br />
+            </p>
+          </span>
+          <h6>The above rate includes the breakfast</h6>
+          <span>
+            <p>
+              <strong>Contact No.: </strong>7893173814
+              <br />
+              <strong>Email: </strong>
+              <a
+                href='mailto:bookings@redlas.in'
+                target='_blank'
+                rel='noreferrer'>
+                bookings@redlas.in
+              </a>
+            </p>
+          </span>
+        </div>
       </div>
       <div className='anchor' id='Stall'></div>
       <div className='Stall container'>
