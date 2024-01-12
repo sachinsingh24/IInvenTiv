@@ -144,7 +144,7 @@ const Logistics = () => {
       <div className='Nearby container'>
         <h2 className='mb-4'>Nearby Hotels</h2>
         <div className='hotels mb-4'>
-          <h4>1.Hotel Lemon Tree, Gachibowli</h4>
+          <h3>Hotel Lemon Tree, Gachibowli</h3>
           <span>
             <h6>Details:</h6>
             <p>
@@ -218,13 +218,13 @@ const Logistics = () => {
 
         </div>
         <div className='hotels mb-4'>
-        <h4>
-            2.Redla's Inn (
+        <h3>
+            Redla's Inn (
             <a href='https://redlas.in' target='_blank' rel='noreferrer'>
               redlas.in
             </a>
             ){' '}
-          </h4>
+          </h3>
           <span>
             <h6>Details:</h6>
             <p>
