@@ -165,7 +165,6 @@ const Logistics = () => {
               <br />
             </p>
           </span>
-
           <span>
             <h6>Room Rates Include:</h6>
             <ul>
@@ -216,7 +215,10 @@ const Logistics = () => {
               For further information call: +91 9911 701 701
             </p>
           </span>
-          <h4>
+
+        </div>
+        <div className='hotels mb-4'>
+        <h4>
             2.Redla's Inn (
             <a href='https://redlas.in' target='_blank' rel='noreferrer'>
               redlas.in
