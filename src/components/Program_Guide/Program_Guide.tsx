@@ -2,6 +2,9 @@
 
 import React from 'react';
 import './Program_Guide.css';
+import Card from 'react-bootstrap/Card';
+import { affordable_healthcare, agriculture_food_processing, industry, defence_space, susutainable_technology,
+  affordable_healthcare_members, agriculture_food_processing_members, industry_members, defence_space_invitees, susutainable_technology_members } from './program_data';
 const Program_Guide = () => {
   return (
     <>
@@ -114,7 +117,7 @@ const Program_Guide = () => {
           <h2>Panel Discussion Forums</h2>
           <div className='my-4 discussion'>
             <h4>Affordable Healthcare:</h4>
-            <ol>
+            {/* <ol>
               <li>Mr. Rajaneesh kini, CTO, Cyient Ltd</li>
               <li>B. Ravi, Professor, NITK</li>
               <li>Prof. Suman Chakraborty, Professor, IIT Kgp</li>
@@ -122,9 +125,67 @@ const Program_Guide = () => {
                 Prashant Garg, Executive Chair, Paul Dubord Chair of Cornea, L V
                 Prasad Eye Institute
               </li>
-            </ol>
+            </ol> */}
+            {/* Card of Affordable healthcare */}
+            <div className='row justify-content-center'>
+              {affordable_healthcare.map((aff: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={aff.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {aff.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={aff.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{aff.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {aff.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            <div className='row justify-content-center'>
+              {affordable_healthcare_members.map((aff_mem: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={aff_mem.id}>
+                  <Card
+                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {aff_mem.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={aff_mem.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{aff_mem.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {aff_mem.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            
             <h4>Agriculture & Food Processing:</h4>
-            <ol>
+            {/* <ol>
               <li>Dr. Sridevi Annapurna Singh, Director, CFTRI</li>
               <li>Prof. V. Palanimuthu, Director, NIFTEM</li>
               <li>
@@ -132,19 +193,251 @@ const Program_Guide = () => {
                 Wellness Company
               </li>
               <li>Mr. Rajasekhar, Chief Operating Officer, CSA</li>
-            </ol>
+            </ol> */}
+            {/* Card of Agriculture & Food Processing: */}
+            <div className='row justify-content-center'>
+              {agriculture_food_processing.map((agr: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={agr.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {agr.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={agr.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{agr.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {agr.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            <div className='row justify-content-center'>
+              {agriculture_food_processing_members.map((agr_mem: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={agr_mem.id}>
+                  <Card
+                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {agr_mem.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={agr_mem.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{agr_mem.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {agr_mem.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+
             <h4>Industry 4.0: </h4>
             {/* <ol>
               <li></li>
             </ol> */}
+            {/* Card of Industry 4.0: */}
+            <div className='row justify-content-center'>
+              {industry.map((ind: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={ind.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {ind.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={ind.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{ind.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {ind.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            <div className='row justify-content-center'>
+              {industry_members.map((ind_mem: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={ind_mem.id}>
+                  <Card
+                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {ind_mem.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={ind_mem.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{ind_mem.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {ind_mem.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+
             <h4>Defense & Space: </h4>
             {/* <ol>
               <li></li>
             </ol> */}
+            {/* Card of Defense & Space: */}
+            <div className='row justify-content-center'>
+              {defence_space.map((def: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={def.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {def.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={def.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{def.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {def.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            <div className='row justify-content-center'>
+              {defence_space_invitees.map((def_inv: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={def_inv.id}>
+                  <Card
+                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {def_inv.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={def_inv.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{def_inv.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {def_inv.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+
             <h4>Sustainable Technologies: </h4>
             {/* <ol>
               <li></li>
             </ol> */}
+            {/* Card of Sustainable Technologies: */}
+            <div className='row justify-content-center'>
+              {susutainable_technology.map((sust: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={sust.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {sust.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={sust.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{sust.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {sust.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            <div className='row justify-content-center'>
+              {susutainable_technology_members.map((sust_mem: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={sust_mem.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {sust_mem.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '220px' }} src={sust_mem.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{sust_mem.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {sust_mem.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
         <div className='anchor' id='Layout'></div>

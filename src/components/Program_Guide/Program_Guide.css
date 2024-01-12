@@ -179,3 +179,19 @@
 .timeline-item:last-child {
     border-image: linear-gradient(to bottom, rgba(255, 253, 253, 0.863) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
+
+.card_all_members{
+    box-shadow: 5px 5px 20px #575757;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card_heading{
+    color: #f9a33f;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
