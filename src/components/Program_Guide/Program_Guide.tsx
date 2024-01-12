@@ -140,7 +140,7 @@ const Program_Guide = () => {
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {aff.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={aff.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={aff.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -161,14 +161,14 @@ const Program_Guide = () => {
                   className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
                   key={aff_mem.id}>
                   <Card
-                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
                     className='card_all_members'>
                     <h5
                       className='card_heading'
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {aff_mem.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={aff_mem.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={aff_mem.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -208,7 +208,7 @@ const Program_Guide = () => {
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {agr.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={agr.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={agr.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -229,14 +229,14 @@ const Program_Guide = () => {
                   className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
                   key={agr_mem.id}>
                   <Card
-                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
                     className='card_all_members'>
                     <h5
                       className='card_heading'
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {agr_mem.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={agr_mem.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={agr_mem.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -270,7 +270,7 @@ const Program_Guide = () => {
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {ind.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={ind.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={ind.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -291,14 +291,14 @@ const Program_Guide = () => {
                   className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
                   key={ind_mem.id}>
                   <Card
-                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
                     className='card_all_members'>
                     <h5
                       className='card_heading'
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {ind_mem.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={ind_mem.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={ind_mem.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -332,7 +332,7 @@ const Program_Guide = () => {
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {def.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={def.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={def.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -353,14 +353,14 @@ const Program_Guide = () => {
                   className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
                   key={def_inv.id}>
                   <Card
-                    style={{ width: '15rem', backgroundColor: 'transparent' }}
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
                     className='card_all_members'>
                     <h5
                       className='card_heading'
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {def_inv.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={def_inv.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={def_inv.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -394,7 +394,7 @@ const Program_Guide = () => {
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {sust.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={sust.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={sust.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -422,7 +422,7 @@ const Program_Guide = () => {
                       style={{ padding: '10px 0px', textAlign: 'center' }}>
                       {sust_mem.title}
                     </h5>
-                    <Card.Img variant="top" style={{ height: '220px' }} src={sust_mem.image} alt="image" />
+                    <Card.Img variant="top" style={{ height: '200px' }} src={sust_mem.image} alt="image" />
                     <Card.Body
                       style={{
                         backgroundColor: '#fff',
@@ -459,6 +459,9 @@ const Program_Guide = () => {
                   backgroundColor: 'rgb(21, 68, 137)',
                   border: '1px rgb(21, 68, 137)',
                   color: '#fff',
+                  height:'50px',
+                  fontSize:"20px",
+                  marginLeft:"15px"
                 }}>
                 IInvenTiv Event Layout
               </button>
