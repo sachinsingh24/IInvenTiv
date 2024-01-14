@@ -6,45 +6,38 @@ export const affordable_healthcare = [
         affiliations: 'Director, IIT Bombay',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/1_subhasis_chaudhuri.jpg'),
     },
-    {   
-        id: 2,
-        title: 'Moderator',
-        name: 'Dr. Prashant Garg',
-        affiliations: 'Executive Chair, L V Prasad Eye Institute',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/2_prashant_garg.jpg'),
-    },
 ];
 export const affordable_healthcare_members = [
     {   
+        id: 5,
+        title: 'Panel Member',
+        name: 'Mr. Rajneesh Kini',
+        affiliations: 'Chief Technology Officer, Cyient',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/5_rajneesh _kini.jpg'),
+    },
+    {   
         id: 3,
-        title: 'Member',
+        title: 'Panel Member',
         name: 'Prof. B. Ravi',
-        affiliations: 'Director of National Institution of Surathkal, Karnataka.',
+        affiliations: 'Director, NITK Surathkal.',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/3_b_ravi.jpg'),
     },
     {   
         id: 4,
-        title: 'Member',
+        title: 'Panel Member',
         name: 'Prof. Suman Chakraborty',
         affiliations: 'Department of Mechanical Engineering, IIT Kharagpur',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/4_suman_chakraborty.jpg'),
     },
     {   
-        id: 5,
-        title: 'Member',
-        name: 'Rajneesh Kini',
-        affiliations: 'Chief Technology Officer, Cyient',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/5_rajneesh _kini.jpg'),
+        id: 2,
+        title: 'Panel Member',
+        name: 'Dr. Prashant Garg',
+        affiliations: 'Executive Chair, L V Prasad Eye Institute',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/2_prashant_garg.jpg'),
     },
 ]
 export const agriculture_food_processing = [
-    {   
-        id: 6,
-        title: 'Convenor',
-        name: 'Dr. Sridevi Annapurna Singh',
-        affiliations: 'Director, CFTRI (Central Food Technological Research Institute), Mysuru',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/6_sridevi_annapurna_singh.jpg'),
-    },
     {   
         id: 9,
         title: 'Moderator',
@@ -55,104 +48,111 @@ export const agriculture_food_processing = [
 ];
 export const agriculture_food_processing_members = [
     {   
+        id: 6,
+        title: 'Panel Member',
+        name: 'Dr. Sridevi Annapurna Singh',
+        affiliations: 'Director, CFTRI, Mysuru',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/6_sridevi_annapurna_singh.jpg'),
+    },
+    {   
+        id: 10,
+        title: 'Panel Member',
+        name: 'Prof. V. Palanimuthu',
+        affiliations: 'Director, NIFTEM, Thanjavur',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/10_v_palanimuthu.jpg'),
+    },
+    {   
         id: 7,
-        title: 'Member',
+        title: 'Panel Member',
         name: 'Dr. Gururaj Chalageri',
         affiliations: 'Himalaya Wellness Company',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/7_gururaj_chalageri.jpg'),
     },
     {   
         id: 8,
-        title: 'Member',
-        name: 'Dr. Gururaj Chalageri',
-        affiliations: 'Chief Operating Officer, Centre for Sustainable Agriculture',
+        title: 'Panel Member',
+        name: 'Mr. Rajasekhar',
+        affiliations: 'Chief Operating Officer, CSA',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/8_rajasekhar.jpg'),
-    },
-    {   
-        id: 10,
-        title: 'Member',
-        name: 'Prof. V. Palanimuthu',
-        affiliations: 'Director, NIFTEM (National Institution of Food Technology Entrepreneurship & Management), Thanjavur',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/10_v_palanimuthu.jpg'),
     },
 ]
 export const industry = [
     {   
         id: 19,
         title: 'Moderator',
-        name: 'Prof. Kamakoti',
+        name: 'Prof. V. Kamakoti',
         affiliations: 'Director, IIT Madras',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/19_kamakoti.jpg'),
     },
 ];
 export const industry_members = [
     {   
+        id: 20,
+        title: 'Panel Member',
+        name: 'Mr. A. Subramani',
+        affiliations: 'GE India Industrial Pvt Ltd.',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/20_a_subramani.jpg'),
+    },
+    {   
+        id: 18,
+        title: 'Panel Member',
+        name: 'Prof. Asim Tewari',
+        affiliations: 'Dept. of Mechanical Engineering, IIT Bombay',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/18_asim_tewari.jpg'),
+    },
+    {   
         id: 16,
-        title: 'Member',
+        title: 'Panel Member',
         name: 'Mr. Nilesh Auti',
         affiliations: 'SVP, Manufacturing Systems, Cyient Ltd.',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/16_nilesh_auti.jpg'),
     },
     {   
         id: 17,
-        title: 'Member',
+        title: 'Panel Member',
         name: 'Mr. Jayanta Banerjee',
-        affiliations: 'Group CIO Tata Steel',
+        affiliations: 'Group CIO, Tata Steel',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/17_jayanta_banerjee.jpg'),
     },
-    {   
-        id: 18,
-        title: 'Member',
-        name: 'Prof. Asim Tewari',
-        affiliations: 'Dept. of Mechanical Engineering, IIT Bombay',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/18_asim_tewari.jpg'),
-    },
-    {   
-        id: 20,
-        title: 'Member',
-        name: 'Mr. A. Subramani',
-        affiliations: 'GE India Industrial Pvt Ltd.',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/20_a_subramani.jpg'),
-    }
 ]
 export const defence_space = [
     {   
-        id: 13,
-        title: 'Convenor',
-        name: 'Dr. V. Narayanan',
-        affiliations: 'Director, Liquid Propulsion Systems Centre (LPSC), Trivandrum',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/13_v_narayanan.jpg'),
-    },
-    {   
         id: 15,
         title: 'Moderator',
-        name: 'Prof. Govindan Rangarajan',
+        name: 'Prof. G Rangarajan',
         affiliations: 'Director, IISc Bangalore',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/15_govindan_rangarajan.jpg'),
     },
 ];
 export const defence_space_invitees = [
     {   
+        id: 13,
+        title: 'Panel Member',
+        name: 'Dr. V. Narayanan',
+        affiliations: 'Director, LPSC, Trivandrum',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/13_v_narayanan.jpg'),
+    },
+    {   
+        id: 14,
+        title: 'Panel Member',
+        name: 'Dr. E Varadarajan',
+        affiliations: 'CVRDE, DRDO, Chennai',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/14_e_varadarajan.jpg'),
+    },
+    {   
         id: 11,
-        title: 'Invitee',
-        name: 'Dr. R. Balamurali Krishnan',
-        affiliations: 'Director, DMRL (Defence Metallurgical Research Laboratory) Hyderabad',
+        title: 'Panel Member',
+        name: 'Dr. R. Balamuralikrishnan',
+        affiliations: 'Director, DMRL Hyderabad',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/11_r_balamurali_krishnan.jpg'),
     },
     {   
         id: 12,
-        title: 'Invitee',
+        title: 'Panel Member',
         name: 'Dr. S.K. Jha',
-        affiliations: 'CMD (Chief Managing Director), Midhani',
+        affiliations: 'CMD, Midhani',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/12_s_k_jha.jpg'),
     },
-    {   
-        id: 14,
-        title: 'Member',
-        name: 'Dr. E Varadarajan, Scientist F',
-        affiliations: 'CVRDE, DRDO, Chennai',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/14_e_varadarajan.jpg'),
-    }
 ]
 export const susutainable_technology = [
     {   
@@ -162,34 +162,34 @@ export const susutainable_technology = [
         affiliations: 'Director, IIT Delhi',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/21_rangan_banerjee.jpg'),
     },
-    {   
-        id: 22,
-        title: 'Convenor',
-        name: 'Dr. Tata N. Rao',
-        affiliations: 'Director, ARCI (International Advanced Research Centre for Powder Metallurgy and New Materials), Hyderabad',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/22_tata_n_rao.jpg'),
-    },
 ];
 export const susutainable_technology_members = [
     {   
-        id: 23,
-        title: 'Member',
-        name: 'Shri Shankar Venugopal',
-        affiliations: 'Vice President - Innovation & IP, Mahindra & Mahindra',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/23_shankar_venugopal.jpg'),
+        id: 22,
+        title: 'Panel Member',
+        name: 'Dr. Tata N. Rao',
+        affiliations: 'Director, ARCI , Hyderabad',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/22_tata_n_rao.jpg'),
     },
     {   
+        id: 23,
+        title: 'Panel Member',
+        name: 'Shri Shankar Venugopal',
+        affiliations: 'VP - Innovation & IP, Mahindra & Mahindra',
+        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/23_shankar_venugopal.jpg'),
+    },
+    // {
+    //     id: 25,
+    //     title: 'Panel Member',
+    //     name: 'Mr. Ravi Shanker Sharma',
+    //     affiliations: 'Director, Digital Green',
+    //     image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/25_ravi_Shanker_sharma.jpg'),
+    // },
+    {
         id: 24,
-        title: 'Member',
+        title: 'Panel Member',
         name: 'Dr. Rambabu',
         affiliations: 'Greenko Group',
         image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/24_rambabu.jpg'),
     },
-    {   
-        id: 25,
-        title: 'Member',
-        name: 'Mr. Ravi Shanker Sharma',
-        affiliations: 'Director, Digital Green',
-        image: require('../../images/program_guidance/panel_member_pics/Panel Member Pics/25_ravi_Shanker_sharma.jpg'),
-    }
 ]

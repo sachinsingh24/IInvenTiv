@@ -116,7 +116,7 @@ const Program_Guide = () => {
         <div className='panal-discussion container'>
           <h2>Panel Discussion Forums</h2>
           <div className='my-4 discussion'>
-            <h4>Affordable Healthcare:</h4>
+            <h4>Affordable Healthcare  (11:30AM-12:30 PM)	:</h4>
             {/* <ol>
               <li>Mr. Rajaneesh kini, CTO, Cyient Ltd</li>
               <li>B. Ravi, Professor, NITK</li>
@@ -184,7 +184,7 @@ const Program_Guide = () => {
               ))}
             </div>
             
-            <h4>Agriculture & Food Processing:</h4>
+            <h4>Agriculture & Food Processing (02:00-03:00 PM) :</h4>
             {/* <ol>
               <li>Dr. Sridevi Annapurna Singh, Director, CFTRI</li>
               <li>Prof. V. Palanimuthu, Director, NIFTEM</li>
@@ -252,6 +252,68 @@ const Program_Guide = () => {
               ))}
             </div>
 
+            <h4>Defense & Space (03:00-04:00 PM) : </h4>
+            {/* <ol>
+              <li></li>
+            </ol> */}
+            {/* Card of Defense & Space: */}
+            <div className='row justify-content-center'>
+              {defence_space.map((def: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={def.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {def.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '200px' }} src={def.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{def.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {def.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+            <div className='row justify-content-center'>
+              {defence_space_invitees.map((def_inv: any) => (
+                <div
+                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
+                  key={def_inv.id}>
+                  <Card
+                    style={{ width: '18rem', backgroundColor: 'transparent' }}
+                    className='card_all_members'>
+                    <h5
+                      className='card_heading'
+                      style={{ padding: '10px 0px', textAlign: 'center' }}>
+                      {def_inv.title}
+                    </h5>
+                    <Card.Img variant="top" style={{ height: '200px' }} src={def_inv.image} alt="image" />
+                    <Card.Body
+                      style={{
+                        backgroundColor: '#fff',
+                        borderRadius: '0 0 10px 10px',
+                      }}>
+                      <Card.Title style={{ color: '#000' }}>{def_inv.name}</Card.Title>
+                      <Card.Text style={{ color: '#000' }}>
+                        {def_inv.affiliations}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </div>
+
             <h4>Industry 4.0: </h4>
             {/* <ol>
               <li></li>
@@ -307,68 +369,6 @@ const Program_Guide = () => {
                       <Card.Title style={{ color: '#000' }}>{ind_mem.name}</Card.Title>
                       <Card.Text style={{ color: '#000' }}>
                         {ind_mem.affiliations}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div>
-              ))}
-            </div>
-
-            <h4>Defense & Space: </h4>
-            {/* <ol>
-              <li></li>
-            </ol> */}
-            {/* Card of Defense & Space: */}
-            <div className='row justify-content-center'>
-              {defence_space.map((def: any) => (
-                <div
-                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
-                  key={def.id}>
-                  <Card
-                    style={{ width: '18rem', backgroundColor: 'transparent' }}
-                    className='card_all_members'>
-                    <h5
-                      className='card_heading'
-                      style={{ padding: '10px 0px', textAlign: 'center' }}>
-                      {def.title}
-                    </h5>
-                    <Card.Img variant="top" style={{ height: '200px' }} src={def.image} alt="image" />
-                    <Card.Body
-                      style={{
-                        backgroundColor: '#fff',
-                        borderRadius: '0 0 10px 10px',
-                      }}>
-                      <Card.Title style={{ color: '#000' }}>{def.name}</Card.Title>
-                      <Card.Text style={{ color: '#000' }}>
-                        {def.affiliations}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div>
-              ))}
-            </div>
-            <div className='row justify-content-center'>
-              {defence_space_invitees.map((def_inv: any) => (
-                <div
-                  className='col-md-2 col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-3'
-                  key={def_inv.id}>
-                  <Card
-                    style={{ width: '18rem', backgroundColor: 'transparent' }}
-                    className='card_all_members'>
-                    <h5
-                      className='card_heading'
-                      style={{ padding: '10px 0px', textAlign: 'center' }}>
-                      {def_inv.title}
-                    </h5>
-                    <Card.Img variant="top" style={{ height: '200px' }} src={def_inv.image} alt="image" />
-                    <Card.Body
-                      style={{
-                        backgroundColor: '#fff',
-                        borderRadius: '0 0 10px 10px',
-                      }}>
-                      <Card.Title style={{ color: '#000' }}>{def_inv.name}</Card.Title>
-                      <Card.Text style={{ color: '#000' }}>
-                        {def_inv.affiliations}
                       </Card.Text>
                     </Card.Body>
                   </Card>
