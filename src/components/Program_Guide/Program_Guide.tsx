@@ -116,7 +116,7 @@ const Program_Guide = () => {
         <div className='panal-discussion container'>
           <h2>Panel Discussion Forums</h2>
           <div className='my-4 discussion'>
-            <h4>Affordable Healthcare  (11:30AM-12:30 PM)	:</h4>
+            <h4>Affordable Healthcare :</h4>
             {/* <ol>
               <li>Mr. Rajaneesh kini, CTO, Cyient Ltd</li>
               <li>B. Ravi, Professor, NITK</li>
@@ -184,7 +184,7 @@ const Program_Guide = () => {
               ))}
             </div>
             
-            <h4>Agriculture & Food Processing (02:00-03:00 PM) :</h4>
+            <h4>Agriculture & Food Processing :</h4>
             {/* <ol>
               <li>Dr. Sridevi Annapurna Singh, Director, CFTRI</li>
               <li>Prof. V. Palanimuthu, Director, NIFTEM</li>
@@ -252,7 +252,7 @@ const Program_Guide = () => {
               ))}
             </div>
 
-            <h4>Defense & Space (03:00-04:00 PM) : </h4>
+            <h4>Defense & Space : </h4>
             {/* <ol>
               <li></li>
             </ol> */}
