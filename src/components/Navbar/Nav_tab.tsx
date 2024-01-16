@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Offcanvas,
   // NavDropdown,

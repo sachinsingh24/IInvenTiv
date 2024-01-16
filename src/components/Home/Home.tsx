@@ -25,6 +25,8 @@ const Home = () => {
     third: 0,
     fourth: 0,
   });
+  console.log(value);
+  
 
   const [fade, setFade] = useState('d-none');
   const handleScroll = () => {

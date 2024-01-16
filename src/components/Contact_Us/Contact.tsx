@@ -1,33 +1,31 @@
 /** @format */
 
-import React, { useRef } from 'react';
 import './Contact_Us.css';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const form: any = useRef();
+  // const form: any = useRef();
   // const validateSubmitForm = () => {};
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
-    emailjs
-      .sendForm(
-        'shivhome_formid',
-        'template_tjqs146',
-        form.current,
-        'gf8rXDhegAr-dVvvL'
-      )
-      .then(
-        (result: any) => {
-          console.log(result.text);
-          window.alert('message send');
-        },
-        (error: any) => {
-          console.log(error.text);
-          window.alert('please try again...');
-        }
-      );
-    event.target.reset();
-  };
+  // const handleSubmit = (event: any) => {
+  //   event.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       'shivhome_formid',
+  //       'template_tjqs146',
+  //       form.current,
+  //       'gf8rXDhegAr-dVvvL'
+  //     )
+  //     .then(
+  //       (result: any) => {
+  //         console.log(result.text);
+  //         window.alert('message send');
+  //       },
+  //       (error: any) => {
+  //         console.log(error.text);
+  //         window.alert('please try again...');
+  //       }
+  //     );
+  //   event.target.reset();
+  // };
   return (
     <section className='contact-section'>
       <div className='contact-details container'>
