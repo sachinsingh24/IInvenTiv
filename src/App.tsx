@@ -41,7 +41,7 @@ function App() {
           }
         />
         <Route
-          path="/Home"
+          path="/Home/"
           element={
             <>
               <Particles
@@ -52,13 +52,13 @@ function App() {
             </>
           }
         />
-        <Route path="/Messages" element={<Messages />} />
-        <Route path="/R&D_Showcase" element={<Showcase />} />
-        <Route path="/Program_Guide" element={<ProgramGuide />} />
-        <Route path="/Outreach" element={<Outreach />} />
+        <Route path="/Messages/" element={<Messages />} />
+        <Route path="/R&D_Showcase/" element={<Showcase />} />
+        <Route path="/Program_Guide/" element={<ProgramGuide />} />
+        <Route path="/Outreach/" element={<Outreach />} />
         
-        <Route path="/Logistics" element={<Logistics />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Logistics/" element={<Logistics />} />
+        <Route path="/Contact/" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

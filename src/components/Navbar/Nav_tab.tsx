@@ -121,7 +121,7 @@ const Nav_tab = () => {
                           <NavDropdown.Item
                             key={index}
                             href={`${item.link}`}
-                            onClick={() => navigate('/Home')}>
+                            onClick={() => navigate('/Home/')}>
                             <div className='nav-dropdown'>
                               <div className='general-cloud'>
                                 <div className='general-cloud-vps'>
@@ -146,7 +146,7 @@ const Nav_tab = () => {
                           <NavDropdown.Item
                             key={index}
                             href={`${item.link}`}
-                            onClick={() => navigate('/Messages')}>
+                            onClick={() => navigate('/Messages/')}>
                             <div className='nav-dropdown'>
                               <div className='general-cloud'>
                                 <div className='general-cloud-vps'>
@@ -171,7 +171,7 @@ const Nav_tab = () => {
                           <NavDropdown.Item
                             key={index}
                             href={`${item.link}`}
-                            onClick={() => navigate('/R&D_Showcase')}>
+                            onClick={() => navigate('/R&D_Showcase/')}>
                             <div className='nav-dropdown'>
                               <div className='general-cloud'>
                                 <div className='general-cloud-vps'>
@@ -191,7 +191,7 @@ const Nav_tab = () => {
                       onMouseLeave={() => handleShowUpdate('drop4')}
                       onClick={() => {
                         handleNavClick('4');
-                        navigate('Program_Guide');
+                        navigate('Program_Guide/');
                       }}
                       className={activeLink === '4' ? 'active' : ''}>
                       {ProgramGuide.map((item, index) => {
@@ -224,7 +224,7 @@ const Nav_tab = () => {
                           <NavDropdown.Item
                             key={index}
                             href={`${item.link}`}
-                            onClick={() => navigate('/Logistics')}>
+                            onClick={() => navigate('/Logistics/')}>
                             <div className='nav-dropdown'>
                               <div className='general-cloud'>
                                 <div className='general-cloud-vps'>
@@ -249,7 +249,7 @@ const Nav_tab = () => {
                           <NavDropdown.Item
                             key={index}
                             href={`${item.link}`}
-                            onClick={() => navigate('/Outreach')}>
+                            onClick={() => navigate('/Outreach/')}>
                             <div className='nav-dropdown'>
                               <div className='general-cloud'>
                                 <div className='general-cloud-vps'>
